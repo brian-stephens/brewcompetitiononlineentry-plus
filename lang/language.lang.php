@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * ---------------------------------------------
+ * TODO - convert the following for translation:
+ * ---------------------------------------------
+ * - All Admin screens and functions.
+ * - All update screens and functions.
+ * - All setup screens and functions.
+ * - Conversion scripts for brewStyleEntry field (Entry Requirements).
+ *   -- Be sure to also update function in common.lib.php.
+ */
+
+// Moved the Use SMTP flag to this file to make
+// sure it's able to be used by any translation file
+$mail_use_smtp = FALSE;
+
+if (HOSTED) {
+  
+  $mail_use_smtp = TRUE;
+  
+  if (!isset($current_parsed_host)) {
+    $current_url_to_parse = 'http://';
+    if (is_https()) $current_url_to_parse = 'https://';  
+    $current_url_to_parse .= $_SERVER['SERVER_NAME'];
+    $current_parsed_url = parse_url($current_url_to_parse);
+    $current_parsed_host = explode('.', $current_parsed_url['host']);
+  }
+
+  if (!isset($_SESSION['prefsEmailFrom'])) $_SESSION['prefsEmailFrom'] = "noreply@".$current_parsed_host[1].".".$current_parsed_host[2];
+  
+}
+
+elseif ((!HOSTED) && (isset($_SESSION['prefsEmailSMTP']))) { 
+  if (($_SESSION['prefsEmailSMTP'] == 1) && (!empty($_SESSION['prefsEmailHost'])) && (!empty($_SESSION['prefsEmailFrom'])) && (!empty($_SESSION['prefsEmailUsername'])) && (!empty($_SESSION['prefsEmailPassword'])) && (!empty($_SESSION['prefsEmailPort']))) $mail_use_smtp = TRUE;
+}
+
+// Default to US English language if prefs not defined.
+$prefsLanguage = "en-US";
+$prefsLanguageFolder = "en";
+
+if ((isset($_SESSION['prefsLanguage'])) && (!empty($_SESSION['prefsLanguage']))) {
+  
+  if (($_SESSION['prefsLanguage'] == "English") || ($_SESSION['prefsLanguage'] == "english")) {
+    $_SESSION['prefsLanguage'] = "en-US";
+    $prefsLanguage = "en-US";
+  }
+
+  else $prefsLanguage = $_SESSION['prefsLanguage'];
+
+} 
+
+if ((isset($_SESSION['prefsLanguageFolder'])) && (!empty($_SESSION['prefsLanguageFolder']))) {
+  if ($prefsLanguage == "English") $prefsLanguageFolder = "en";
+  else $prefsLanguageFolder = $_SESSION['prefsLanguageFolder'];
+}
+
+// Set the language to US English for all admin functions.
+if (((isset($section)) && ($section == "admin")) || ((isset($section)) && ($section == "evaluation") && ($view == "admin"))) {
+  $prefsLanguage = "en-US";
+  $prefsLanguageFolder = "en";
+}
+
+// Set language for setup to be US English.
+if ((isset($section)) && (strpos($section, "step") === TRUE)) {
+  $prefsLanguage = "en-US";
+  $prefsLanguageFolder = "en";
+}
+
+if ((isset($section)) && ($section == "update")) {
+  $prefsLanguage = "en-US";
+  $prefsLanguageFolder = "en";
+}
+
+// Load public pages language file
+include (LANG.$prefsLanguageFolder.DIRECTORY_SEPARATOR.$prefsLanguage.'.lang.php');
+
+// Load admin pages language file only when needed
+// A future version will have full conversions for Admin, Update, and Setup
+if ((isset($section)) && (($section == "admin") || ($section == "update") || ($section == "evaluation") || (strpos($section, "step") !== FALSE))) {
+  include (LANG.$prefsLanguageFolder.DIRECTORY_SEPARATOR.$prefsLanguage.'_admin.lang.php');
+}
+
+?>

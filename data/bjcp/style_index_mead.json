@@ -1,0 +1,93 @@
+[
+  {
+    "code": "M1A",
+    "name": "Dry Mead",
+    "category": "Traditional Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M1B",
+    "name": "Semi-Sweet Mead",
+    "category": "Traditional Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M1C",
+    "name": "Sweet Mead",
+    "category": "Traditional Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M2A",
+    "name": "Cyser",
+    "category": "Fruit Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M2B",
+    "name": "Pyment",
+    "category": "Fruit Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M2C",
+    "name": "Berry Mead",
+    "category": "Fruit Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M2D",
+    "name": "Stone Fruit Mead",
+    "category": "Fruit Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M2E",
+    "name": "Melomel",
+    "category": "Fruit Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M3A",
+    "name": "Fruit and Spice Mead",
+    "category": "Spiced Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M3B",
+    "name": "Spice, Herb or Vegetable Mead",
+    "category": "Spiced Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M4A",
+    "name": "Braggot",
+    "category": "Specialty Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M4B",
+    "name": "Historical Mead",
+    "category": "Specialty Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  },
+  {
+    "code": "M4C",
+    "name": "Experimental Mead",
+    "category": "Specialty Mead",
+    "guide": "BJCP2015",
+    "type": "mead"
+  }
+]

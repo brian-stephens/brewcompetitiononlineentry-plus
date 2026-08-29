@@ -1,0 +1,320 @@
+{
+  "styles": {
+    "C1A": {
+      "code": "C1A",
+      "name": "Common Cider",
+      "category": "Traditional Cider",
+      "category_description": "Traditional Ciders are produced through fermenting apples without additional ingredients or unusual processes, and represent the regional traditions from many apple-growing areas of the world. The use of a geographic name in a style title does not imply an appellation - ciders inspired by the originals may be produced anywhere, as long as they have a similar sensory profile. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A Common Cider is made primarily from culinary (table) apples. Compared to most other styles in this category, these ciders are generally lower in tannin and higher in acidity.",
+        "overall_impression": "A refreshing drink with the fruity and floral aroma of apples, and a bright, juicy acidity. Fresh, with a clean fermentation, but possibly showing a slight yeast character.",
+        "aroma_and_flavor": "Apple character noticeable, either as the flavor of the fruit or as a fruity-floral aroma. Sweet or low-alcohol ciders may have noticeable apple aroma and flavor. Dry ciders will be more neutral-flavored and wine-like with some apple- derived esters and floral notes. Apple-derived esters are not necessarily apple-like; other fruit notes are possible (similar to what occurs when grapes are fermented into wine). Sweetness and acidity should combine to give a refreshing character. Medium to high acidity adds a refreshing quality, but must not be harsh or biting. Restrained tannin may contribute to an increased perception of dryness in the finish. Generally clean fermentation without the rustic or MLF notes of some other regional ciders. Light yeast character acceptable.",
+        "appearance": "Slightly cloudy to brilliant. Color ranges from very pale straw to medium gold. Red-fleshed apple varieties can produce ciders with a blush hue.",
+        "mouthfeel": "Medium-light to medium body. Light tannin can provide a slight to medium-low astringency, but little bitterness. Any level of carbonation.",
+        "comments": "A refreshing drink of some substance - neither bland nor watery. Sweet ciders must not be cloying. Dry ciders must not be too austere (subtle, muted, tight fruit flavor with high acidity). Sometimes called New World Cider or Modern Cider. The name common implies lack of rarity, not lack of quality or class. Common cider may use heirloom apple varieties, if they do not have appreciable tannin levels, significant non- fruity character, or unusual intensity - ciders with these qualities are best entered in other Traditional Cider styles.",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels. Entrants MAY specify apple varieties, particularly if those varieties introduce unusual characteristics.",
+        "varieties": "Common (e.g., Winesap, McIntosh, Golden Delicious, Braeburn, Jonathan), multi-use (e.g., Northern Spy, some Russets, Baldwin), any suitable wildings",
+        "vital_statistics": "OG: 1.045 - 1.065 FG: 0.995 - 1.020 ABV: 4.5 - 8%",
+        "commercial_examples": "Æppeltreow Barn Swallow Cider, Bellwether Liberty Spy, Doc's Hard Apple Cider, Seattle Cider Dry, Tandem Ciders Smackintosh, 2 Towns BrightCider, Uncle John's Apple Hard Cider"
+      }
+    },
+    "C1B": {
+      "code": "C1B",
+      "name": "Heirloom Cider",
+      "category": "Traditional Cider",
+      "category_description": "Traditional Ciders are produced through fermenting apples without additional ingredients or unusual processes, and represent the regional traditions from many apple-growing areas of the world. The use of a geographic name in a style title does not imply an appellation - ciders inspired by the originals may be produced anywhere, as long as they have a similar sensory profile. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "Heirloom Cider is a broadly-defined style that often uses at least some cider apples to create a product having more tannin than Common Cider. It is usually made outside the regions associated with English, French, and Spanish Cider styles, and lacks the distinguishing MLF or rustic characteristics of those styles. It is a type of 'craft' cider produced in North America, eastern England, and elsewhere in the world.",
+        "overall_impression": "Combining the apple character and acidity of a Common Cider with the tannin of an English or French Cider, while retaining a clean fermentation profile.",
+        "aroma_and_flavor": "The intensity of apple character, esters, and sweetness typically varies with the sweetness level. Heirloom variety cider apples may bring their own unique, often rustic, qualities. Acidity can be moderate to high. Tannins can be medium-low to medium-high. Tannins may add to the impression of dryness in the finish, while contributing flavors that are reminiscent of wood, leather, or apple skins. Acidity and tannin together balance the sweetness and provide structure to the cider; they are both typically present, and do not have to be at equal levels. Has a clean fermentation profile without MLF- derived phenol or barnyard character. Mousiness is a serious fault. Light yeast character acceptable.",
+        "appearance": "Slightly cloudy to brilliant. Color ranges from straw to deep gold. Red-fleshed apple varieties can produce ciders with a blush hue.",
+        "mouthfeel": "Medium to full body, depending on tannin level. Any astringency and bitterness from tannin should be no more than moderate. Any level of carbonation.",
+        "comments": "Probably most similar to English Cider, but without any MLF phenols or barnyard character, and having a higher acid balance. Sometimes called Heritage Cider or Traditional Cider. The name heirloom implies the use of older, not-widely-grown cider apple varieties, not that there is some added prestige, especially relative to Common Cider.",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels. Entrants MAY specify varieties of apples used; if specified, a varietal character will be expected.",
+        "varieties": "Multi-use varieties from Common Cider and many of the same bittersweet and bittersharp varieties used in English or French Ciders, or other heirloom or cider varieties, crabapples, hybrids, tannic wildings",
+        "vital_statistics": "OG: 1.050 - 1.080 FG: 0.995 - 1.020 ABV: 6 - 9%",
+        "commercial_examples": "Eve's Cidery Autumn's Gold, Farnum Hill Extra Dry, Redbyrd Orchard Cloudsplitter, Sea Cider Flagship, Snowdrift Cliffbreaks Blend, Tandem Ciders Crabster, West County Cider Redfield"
+      }
+    },
+    "C1C": {
+      "code": "C1C",
+      "name": "English Cider",
+      "category": "Traditional Cider",
+      "category_description": "Traditional Ciders are produced through fermenting apples without additional ingredients or unusual processes, and represent the regional traditions from many apple-growing areas of the world. The use of a geographic name in a style title does not imply an appellation - ciders inspired by the originals may be produced anywhere, as long as they have a similar sensory profile. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "English Cider is a regional product originating in the West Country, a group of counties in the southwest of England. Made from bittersweet and bittersharp apples, it is higher in tannin and lower in acidity than Common Cider. It may optionally have a phenolic-smoky character from intentional MLF. Not all cider from England fits this category; some are in the Heirloom Cider style.",
+        "overall_impression": "Full-bodied and often seeming quite dry with a long finish from high tannin content. The fruit expression may seem subtle due to a lower estery apple character than most styles, but the fruit-derived flavor profile can be complex but non-fruity. Can optionally have a phenolic, smoky, or light barnyard MLF complexity.",
+        "aroma_and_flavor": "The intensity of apple character tends to be subtle, but not absent. Esters and tannins can suggest apples without being overtly apple-flavored. This style often uses fruit giving significantly spicy, earthy, non-fruity flavors that are much different than those from common table apples. Acidity tends to be lower (especially if MLF has been conducted), with tannin providing much of the structure. Tannins can be moderate to high, and can add flavors reminiscent of leather, wood, dried leaves, or apple skins. MLF may add a desirable phenolic or barnyard character, with spicy, smoky, phenolic, leathery, or horsey qualities. These flavor notes are positive but are not required. If present, they must not dominate; in particular, the phenolic and farmyard notes should not be heavy. A strong farmyard character without spicy, smoky, or phenolic notes suggests a Brett contamination, which is a fault. Mousiness is a serious fault.",
+        "appearance": "Barely cloudy to brilliant. Medium yellow to amber color.",
+        "mouthfeel": "Full body. Moderate to high tannin, perceived as astringency with some bitterness. Any carbonation level, although traditional cask versions tend to be still to moderate. Should not gush or foam.",
+        "comments": "Sweeter examples exist, but dry is most traditional, particularly when considering the drying contributions of tannin.",
+        "entry_instructions": "Entrants MUST specify carbonation level. Entrants MUST specify sweetness, restricted to dry through semi-sweet. Entrants MAY specify varieties of apples used; if specified, a varietal character will be expected.",
+        "varieties": "Kingston Black, Stoke Red, Dabinett, Porter's Perfection, Nehou, Yarlington Mill, Major, various Jerseys",
+        "vital_statistics": "OG: 1.050 - 1.075 FG: 0.995 - 1.015 ABV: 6 - 9%",
+        "commercial_examples": "Aspall Imperial Cyder, Burrow Hill Cider Bus, Farnum Hill Farmhouse, Henney's Vintage Cider, Hogan's Dry Cider (UK), Montana CiderWorks North Fork Traditional, Oliver's Traditional Dry, Sea Cider Wild English"
+      }
+    },
+    "C1D": {
+      "code": "C1D",
+      "name": "French Cider",
+      "category": "Traditional Cider",
+      "category_description": "Traditional Ciders are produced through fermenting apples without additional ingredients or unusual processes, and represent the regional traditions from many apple-growing areas of the world. The use of a geographic name in a style title does not imply an appellation - ciders inspired by the originals may be produced anywhere, as long as they have a similar sensory profile. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "French Cider is a regional product originating in the northwest of France, predominantly Normandy and Brittany. Made using bittersweet and bittersharp apples, it can have a higher tannin level, but it is often made sweeter to balance. The French also use MLF as do the English, but the character is often lower. Salts may be adjusted and nutrients may be deprived to arrest fermentation.",
+        "overall_impression": "Medium to sweet, full-bodied, rich. Somewhat fruity. May have a background level of phenolic, smoky, or farmyard character.",
+        "aroma_and_flavor": "Fruity, often fairly sweet with a full, rich flavor. The sweetness and tannin combine to give a palate fullness that often delivers considerable apple flavor. Tannins can dry the finish slightly. MLF notes of spicy-smoky, phenolic, lightly funky, and farmyard are common but not required (just as with English Cider), but must not be pronounced if present.",
+        "appearance": "Clear to brilliant. Medium yellow to amber color. Color may be deeper than other traditional styles. Higher carbonation levels may create a brief foam stand similar to soda.",
+        "mouthfeel": "Medium to full body, mouth-filling. Moderate tannin, perceived mainly as palate fullness and astringency rather than bitterness. Carbonation moderate to champagne-like, but at higher levels it must not gush or foam.",
+        "comments": "Typically made sweet to balance the tannin levels from the traditional apple varieties. The French technique of défécation (keeving in English) can be used to slow fermentation by depriving nutrients. Some may approximate this by back- sweetening with juice. Commercial examples are frequently carbonated in the bottle. The French expect a subtler MLF character than do the English. Known as Cidre in French, and often sold by sweetness level.",
+        "entry_instructions": "Entrants MUST specify carbonation level. Entrants MUST specify sweetness, restricted to medium through sweet. Entrants MAY specify varieties of apples used; if specified, a varietal character will be expected.",
+        "varieties": "Nehou, Muscadet de Dieppe, Reine des Pommes, Michelin",
+        "vital_statistics": "OG: 1.045 - 1.065 FG: 1.005 - 1.020 ABV: 3 - 6%",
+        "commercial_examples": "Bellot Vintage Cider, Domaine Dupont Cidre Bouché, Écusson Cidre Bio Doux, Eric Bordelet Sidre Tendre, Etienne Dupoint Brut, Maison Hérout Cuvée Tradition"
+      }
+    },
+    "C1E": {
+      "code": "C1E",
+      "name": "Spanish Cider",
+      "category": "Traditional Cider",
+      "category_description": "Traditional Ciders are produced through fermenting apples without additional ingredients or unusual processes, and represent the regional traditions from many apple-growing areas of the world. The use of a geographic name in a style title does not imply an appellation - ciders inspired by the originals may be produced anywhere, as long as they have a similar sensory profile. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "Spanish Cider is a regional product originating in the north of Spain, predominantly in Asturias, Cantabria, and Basque regions. Produced from sharp and bittersharp apples using a natural co-fermentation of yeast and bacteria. Often exhibits a wild note, with elevated volatile acidity (ethyl acetate or acetic acid) that traditionally is liberated using an exaggerated pour known as Escanciar.",
+        "overall_impression": "Dry and fresh, with a bright acidity that may contain light to moderate acetic and wild notes. Rustic and earthy impression, traditionally unfiltered.",
+        "aroma_and_flavor": "Aromatic, with pome fruit and floral notes. Often has a light wild, barnyard, or funky quality, but this should not be strong or dominating in the balance. May have a light leather, spice, or smoke quality. Tangy, sharp, tart flavor often with citrus (lemon or grapefruit) accents. Light to moderate acetic character and tannin acceptable, but should not be overtly vinegary. Dry palate and finish are typical. Herbal and hay notes are acceptable. Excessively funky, vinegary, or cheesy flavors are faults.",
+        "appearance": "Clear to cloudy, but most often cloudy. Straw to deep gold in color. A head may appear after the pour, but is not persistent. Traditional products are unfiltered and virtually flat after the carbonation is liberated during the pour.",
+        "mouthfeel": "Medium body. Traditional products have natural carbonation from fermentation but this is liberated during the pour to result in a nearly still drinking experience. However, modern bottled products can be up to sparkling. Little to no astringency or bitterness, except in Basque versions.",
+        "comments": "Each Spanish cider-producing region has its own traditions and products, but these are combined within this broad style. Basque cider is more earthy, leathery, and woody, with more bitterness and a stronger sourness compared to the milder, floral and fruity Asturias cider. Traditionally slow- fermented in chestnut vessels with wild and acetic notes coming from the natural process. Typically enjoyed young. Traditional ciders are called Sidra Natural, and only have residual carbonation from fermentation. Sparkling sidras are a modern product using secondary refermentation in the bottle. Known as Sidra in Spanish and Sagardoa in Basque. Ciders that are simply infected or vinegary should not be entered in this style. If volatile acidity is noted, judges may attempt to liberate it by pouring the cider between tasting glasses or by using a Spanish Cider or wine aerator. Do not attempt theatrical pours during competitions.",
+        "entry_instructions": "Entrants MUST specify carbonation level. Entrants MUST specify sweetness, restricted to dry through medium. Entrants MAY specify varieties of apples used; if specified, a varietal character will be expected.",
+        "varieties": "Regona, Raxao, Limón Montés, Verdialona, De la Riega, San Juan, Errezil, Gezamin, Moko",
+        "vital_statistics": "OG: 1.040 - 1.055 FG: 0.995 - 1.010 ABV: 5 - 6.5%",
+        "commercial_examples": "Barrika Basque Country Cider, El Gaitero Sidra, Fanjul Sidra Natural Llagar de Fozana, Gurutzeta Sagardo Sidra Natural, Kupela Natural Basque Cider, Mayador Sidra Natural M. Busto, Trabanco Sidra Natural, Zapiain Sidra Natural"
+      }
+    },
+    "C2A": {
+      "code": "C2A",
+      "name": "New England Cider",
+      "category": "Strong Cider",
+      "category_description": "Strong Ciders use either sugary adjuncts or concentration processes to increase the final alcohol content to levels above those typically attainable from fermenting only unadulterated sweet cider. These additional ingredients or processes have noticeable effects on the finished profile of the ciders, in addition to simply increasing the alcohol level. The name of the category should not be interpreted as implying that every example is necessarily stronger in alcohol than every Traditional Cider style. The same general characteristics and fault descriptions apply to Strong Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "This cider is made using traditional New England apples with relatively high acidity, and adjuncts to raise alcohol levels and contribute additional flavor notes. New England is a multi-state region in the northeast United States, east of New York state. Overall impression: Substantial body and character. Typically is relatively dry, but can be somewhat sweet if in balance and not containing hot alcohol. Sometimes has a barrel character. Often has flavors from adjuncts, especially raisins.",
+        "aroma_and_flavor": "A flavorful cider with robust apple character, strong but neutral alcohol, and derivative flavors from adjuncts and sugar additives. Traditionally dry, but sweetness can be present to balance stronger flavors. If sugary adjuncts have a flavor or aroma, those should be balanced with the apple flavor and not dominate. A raisin-like flavor is common. Any barrel or wood character should be restrained, not dominant. Tannins can add to the dryness of the finish. Acid levels are moderate to high, and should be in balance with other flavors. Alcohol should not be hot or harsh. There are many possible flavors present; the best examples show an integration and harmonization between components.",
+        "appearance": "Clear to brilliant. Yellow to amber color. Darker colors allowable with declared ingredients and barrel aging.",
+        "mouthfeel": "Moderate to full body. Alcohol warmth typical, but should not have a hot character. Medium-low to moderate tannins, which can be higher if barrel-aged. Variable carbonation.",
+        "comments": "Adjuncts may include any of white sugar, brown sugar, molasses, maple syrup, or small amounts of honey. Raisins are common. These adjuncts are intended to raise the OG well above what could be achieved by apples alone. Sometimes barrel-aged, which can add an oak character similar to a barrel- aged wine. If the barrel previously held spirits, some of their flavor notes (e.g., whisky, rum) may be present, but must be subtle and balanced. New England Cider is a traditional style; do not interpret it to mean any cider from New England. It also has nothing to do with New England (Hazy) IPA.",
+        "entry_instructions": "Entrants MUST specify if the cider was barrel-fermented or -aged. Entrants MUST specify both carbonation and sweetness levels.",
+        "varieties": "Traditional New England apples, such as Northern Spy, Roxbury Russet, Golden Russet, Baldwin",
+        "vital_statistics": "OG: 1.060 - 1.100 FG: 0.995 - 1.020 ABV: 7 - 13%",
+        "commercial_examples": "Blackbird Cider Works New England Style, Doc's New England Small Batch Cider, Dressler Estate Outpost, Gypsy Circus New England Pantomime, Tandem Ciders Scrumpy Little Woody"
+      }
+    },
+    "C2B": {
+      "code": "C2B",
+      "name": "Applewine",
+      "category": "Strong Cider",
+      "category_description": "Strong Ciders use either sugary adjuncts or concentration processes to increase the final alcohol content to levels above those typically attainable from fermenting only unadulterated sweet cider. These additional ingredients or processes have noticeable effects on the finished profile of the ciders, in addition to simply increasing the alcohol level. The name of the category should not be interpreted as implying that every example is necessarily stronger in alcohol than every Traditional Cider style. The same general characteristics and fault descriptions apply to Strong Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A cider fermented with added neutral sugar that increases the starting gravity, and thus the resulting alcohol, to levels well above those typical for Common Cider. The amount of added sugar is greater than what could be used in other styles to compensate for low gravity. Uses no fruit other than apples, and uses only sugar to increase the starting gravity.",
+        "overall_impression": "Typically presents like a dry white wine, with fruity and floral notes. Balanced, with low astringency and bitterness. Alcohol is typically noticeable.",
+        "aroma_and_flavor": "Comparable to a Common Cider in apple character, fruity and floral. Cider character must be distinctive. Very dry to sweet, although often dry. Dry versions can be fairly neutral. Light to moderate yeast character acceptable. Alcohol usually noticeable but should not be harsh, hot, or burning. Acidity typically medium to high. Tannins low to none. The combination of acidity, alcohol, and dryness must not make the finish too hard and tight.",
+        "appearance": "Clear to brilliant. Straw to medium-gold. Cloudiness or hazes are inappropriate.",
+        "mouthfeel": "Dry versions may seem lighter in body than other ciders, because higher alcohol levels are derived from sugar additions rather than juice. Carbonation may range from still to Champagne-like. Typically has a light alcohol warmth.",
+        "comments": "Differs from a New England Cider by using flavorless adjuncts. Sugar is added for chaptalization, or increasing the gravity of the juice in order to create more alcohol; it is not intended to increase residual sweetness. Does not contain grapes or fruit other than apples. Not related to Apfelwein, which is a German word for cider. Fortified or distilled products should not be entered in this style. Some commercial examples may be labeled as applewine based on ABV levels and local laws; when seeking examples, pay attention to the profile, not the labeling.",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels.",
+        "varieties": "Same as Common Cider",
+        "vital_statistics": "OG: 1.070 - 1.100 FG: 0.995 - 1.020 ABV: 9 - 12%",
+        "commercial_examples": "Æppeltreow Autumn Glory Apple Wine, McClure's Sweet Apple Wine, 1911 Established Empire Dry Applewine"
+      }
+    },
+    "C2C": {
+      "code": "C2C",
+      "name": "Ice Cider",
+      "category": "Strong Cider",
+      "category_description": "Strong Ciders use either sugary adjuncts or concentration processes to increase the final alcohol content to levels above those typically attainable from fermenting only unadulterated sweet cider. These additional ingredients or processes have noticeable effects on the finished profile of the ciders, in addition to simply increasing the alcohol level. The name of the category should not be interpreted as implying that every example is necessarily stronger in alcohol than every Traditional Cider style. The same general characteristics and fault descriptions apply to Strong Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A cider fermented from juice concentrated either by freezing fruit before pressing or by freezing juice to remove water. Fermentation stops or is arrested before reaching dryness.",
+        "aroma_and_flavor": "Fruity, with a depth and complexity of apple flavor. Smooth, rich, sweet, and dessert wine-like but with a balancing acidity, like in a Sauternes or other high-quality dessert wine. Acidity must be high enough to prevent it from being cloying. Has a bright character when fresh. Age can bring a deeper complexity with a darker fruit and sugar character, but this should not seem strongly caramelized. Noticeable volatile acidity, typically perceived as acetone, is a fault.",
+        "appearance": "Brilliant. Color is deeper than a standard cider, in the range of gold to amber. Aged examples may show darker shades of color.",
+        "mouthfeel": "Full body. May be tannic (astringent or bitter) but this is generally slight to moderate, although higher balanced levels are allowable. Can be warming but should not be hot.",
+        "comments": "The character differs from Applewine in that the ice cider process increases not only sugar (and hence, potential alcohol) but also acidity and all fruit flavor components proportionately. Differs from Fire Cider in that it lacks deeply caramelized flavors, but has a higher acidity to balance the sweetness. No additives are permitted in this style; in particular, sweeteners may not be used to increase gravity. This style originated in Quebec in the 1990s.",
+        "entry_instructions": "Entrants MUST specify starting gravity, final gravity or residual sugar, and alcohol level. Entrants MUST specify carbonation level.",
+        "varieties": "Usually North American classic table fruit such as McIntosh or Cortland",
+        "vital_statistics": "OG: 1.130 - 1.180 FG: 1.050 - 1.085 ABV: 7 - 13%",
+        "commercial_examples": "Champlain Orchards Honeycrisp Ice Cider, Cidrerie St-Nicolas Glace Du Verger Iced Orchard Cider, Domaine Pinnacle Cidre de Glace, Eden Heirloom Blend Ice Cider, Eve's Cider Essence, Les Vergers de la Colline Le Glacé, Windfall Orchard Ice Cider"
+      }
+    },
+    "C2D": {
+      "code": "C2D",
+      "name": "Fire Cider",
+      "category": "Strong Cider",
+      "category_description": "Strong Ciders use either sugary adjuncts or concentration processes to increase the final alcohol content to levels above those typically attainable from fermenting only unadulterated sweet cider. These additional ingredients or processes have noticeable effects on the finished profile of the ciders, in addition to simply increasing the alcohol level. The name of the category should not be interpreted as implying that every example is necessarily stronger in alcohol than every Traditional Cider style. The same general characteristics and fault descriptions apply to Strong Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A Canadian cider style (cidre de feu) using classic North American table fruit varietals, and fermented from boiled, concentrated juice. Fermentation may be intentionally arrested or stopped while a substantial amount of residual sugar is present. No additives are permitted; in particular, sweeteners may not be used to increase gravity. Commercial versions may be aged for up to five years prior to release.",
+        "overall_impression": "A dark gold to brown cider with a very sweet, caramelized, maple sugar-like impression. Well-aged versions often exhibit a dark fruit or sherry-like character.",
+        "aroma_and_flavor": "Deep, sweet aroma of caramelized sugars that can have a character like maple syrup or brown sugar, with hints of caramel, dried apricots, baked apples, or butterscotch. Aged versions may have elements of dark fruits and often exhibit a sherry-like character. A very light smoke-like character, if present, is not a fault. Acidity and tannins are typically restrained in the balance. High to very high sweetness, yet not cloying. Up to moderate alcohol may be present, but must be well-integrated.",
+        "appearance": "Clear to brilliant. Color is much deeper than a Common Cider or Ice Cider, ranging from deep gold to brown.",
+        "mouthfeel": "Full body, sometimes with a thick, chewy viscosity. Some examples can have moderate tannin levels, but not to the point where they seem overly astringent or harsh. Carbonation typically still to moderate. Alcohol warmth may be perceived at a low to moderately-low level, sometimes less obvious than the strength would otherwise indicate. Well-aged examples can exhibit a characteristic smoothness.",
+        "comments": "Caramelization is desirable, but scorched or burnt flavors are a fault. Differs from Ice Cider in that it should have a character from caramelization, and the acidity is generally lower in the balance.",
+        "entry_instructions": "Entrants MUST specify starting gravity, final gravity or residual sugar, and alcohol level. Entrants MUST specify carbonation level.",
+        "varieties": "Classic North American table fruit such as McIntosh, Cortland, or Spartan",
+        "vital_statistics": "OG: 1.130 - 1.180 FG: 1.040 - 1.075 ABV: 9 - 16%",
+        "commercial_examples": "Cidrerie Milton Cidre de Feu, Domaine Labranche Cidre de Feu, Lacroix Feu Sacré, Petit et Fils Le Jaseux, Union Libre Fire Cider"
+      }
+    },
+    "C3A": {
+      "code": "C3A",
+      "name": "Fruit Cider",
+      "category": "Specialty Cider",
+      "category_description": "Specialty Cider includes those ciders with added flavorings or using processes not already described in categories C1 and C2. These ciders do not necessarily need a declared base style as is expected in some specialty beer styles, but they do need to use a perceptible form of cider as the base. The result must be recognizable as a cider with a pleasant integration of the specialty aspect into a coherent, synergistic end product. Declaring a base style is allowable, but understand that judges will then also judge the cider relative to that base style. Entries with undeclared base styles still should have a cider character. In the context of this category, the term fruit is defined as having the same usage as in the preamble to category 29 Fruit Beer in the 2021 BJCP Beer Style Guidelines. Likewise, the term spice is defined as in category 30 Spiced Beer, including allowing the use of any spices, herbs, or vegetables. The same general characteristics and fault descriptions apply to Specialty Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A cider with additional non-apple fruit or fruit juices added. This is the correct style to enter a beverage fermented from a combination of apple and pear juice.",
+        "overall_impression": "A pleasant integration of cider and added fruit. The apple character and the added fruit must be noticeable, balanced, and complementary. If a base style is declared, should show some evidence of that style. If no base style is declared, assume to be a Common Cider.",
+        "aroma_and_flavor": "The cider character must be present and must meld well with the other declared fruits. The fruit character can seem like fresh fruit or somewhat jam-like, but should always have a fermented quality. It is a fault if the added fruit completely dominates the cider, the fruit seems like raw unfermented juice, or the cider otherwise tastes artificial. Oxidation of the base cider or of the fruit is a fault, but the cider can have a fresh or aged character.",
+        "appearance": "Clear to brilliant, as appropriate for the base style. Color appropriate to added fruit, but should not show brownish or dull oxidation characteristics (for example, red berries should give red-to-purple color, not orange). Fruit varieties can come in a range of colors often broader than those traditionally associated with the declared fruit.",
+        "mouthfeel": "Reflecting base style. Some ingredients may contribute additional acidity or tannins.",
+        "comments": "Typically made from at least 75% apple juice, but this value does not need to be declared. The final product must retain a cider character from the apples. The description of the cider is critical information for judges, and should be sufficient for them to understand the concept. If special ingredients are declared, they should be perceived (exception: potential allergens do not need to be perceivable, but must be declared).",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels. Entrants MUST specify all fruit or fruit juice added. Entrants MAY specify a base cider style. Entrants MAY specify the color of added fruit.",
+        "varieties": "Any, depending on base cider",
+        "vital_statistics": "OG: 1.045 - 1.070 FG: 0.995 - 1.010 ABV: 5 - 9%",
+        "commercial_examples": "Apple Valley Black Currant, Bauman's Cider Loganberry, Tandem Ciders Strawberry Jam, Tieton Cranberry, Uncle John's Apple Cherry Hard Cider, Vander Mill Bluish Gold"
+      }
+    },
+    "C3B": {
+      "code": "C3B",
+      "name": "Spiced Cider",
+      "category": "Specialty Cider",
+      "category_description": "Specialty Cider includes those ciders with added flavorings or using processes not already described in categories C1 and C2. These ciders do not necessarily need a declared base style as is expected in some specialty beer styles, but they do need to use a perceptible form of cider as the base. The result must be recognizable as a cider with a pleasant integration of the specialty aspect into a coherent, synergistic end product. Declaring a base style is allowable, but understand that judges will then also judge the cider relative to that base style. Entries with undeclared base styles still should have a cider character. In the context of this category, the term fruit is defined as having the same usage as in the preamble to category 29 Fruit Beer in the 2021 BJCP Beer Style Guidelines. Likewise, the term spice is defined as in category 30 Spiced Beer, including allowing the use of any spices, herbs, or vegetables. The same general characteristics and fault descriptions apply to Specialty Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A cider with any combination of \"botanicals\" added. Hopped ciders are allowable in this category, in addition to ciders with the spices, herbs, and vegetables referenced in the Specialty Cider preamble.",
+        "overall_impression": "A pleasant integration of cider and added spices. The apple character must combine with the botanicals to give a balanced result. If a base style is declared, should show some evidence of that style.",
+        "aroma_and_flavor": "The apple character and added botanicals must both be noticeable and complementary. As with a fruit cider, it is a fault if the botanicals dominate or seem artificial. Likewise, harsh or raw spice flavors are undesirable. Hops, if used, should have a fresh, green character, not a grassy, vegetal quality. Note that some botanicals are stronger than others. Oxidation of either the special ingredients or the base cider is a fault.",
+        "appearance": "Clear to brilliant, as appropriate for the base style. Color appropriate to the added botanicals and base style.",
+        "mouthfeel": "Reflecting base style. Cider may be tannic or astringent from the effect of added botanicals but must not be bitter from over-extraction. Some ingredients may contribute tannins, bitterness, sourness, or other effects.",
+        "comments": "The final product must retain a cider character from the apples. Hopped ciders typically display a fresh 'dry hop' character, not bitterness, from the hops. The description of the cider is critical information for judges, and should be sufficient for them to understand the concept. If special ingredients are declared, they should be perceived (exception: potential allergens do not need to be perceivable, but must be declared).",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels. Entrants MUST specify all spices added. If hops are used, entrant MUST specify the varieties. Entrants MAY specify a base cider style.",
+        "varieties": "Any, depending on base cider",
+        "vital_statistics": "OG: 1.045 - 1.070 FG: 0.995 - 1.010 ABV: 5 - 9%",
+        "commercial_examples": "Æppeltreow Sparrow Spiced Cider, Finnriver Dry Hopped Cider, Left Foot Charley Cinnamon Girl, Montana CiderWorks Hopped Up, Oliver's At the Hop, Seattle Cider Basil Mint, Uncle John's Atomic Apple"
+      }
+    },
+    "C3C": {
+      "code": "C3C",
+      "name": "Experimental Cider",
+      "category": "Specialty Cider",
+      "category_description": "Specialty Cider includes those ciders with added flavorings or using processes not already described in categories C1 and C2. These ciders do not necessarily need a declared base style as is expected in some specialty beer styles, but they do need to use a perceptible form of cider as the base. The result must be recognizable as a cider with a pleasant integration of the specialty aspect into a coherent, synergistic end product. Declaring a base style is allowable, but understand that judges will then also judge the cider relative to that base style. Entries with undeclared base styles still should have a cider character. In the context of this category, the term fruit is defined as having the same usage as in the preamble to category 29 Fruit Beer in the 2021 BJCP Beer Style Guidelines. Likewise, the term spice is defined as in category 30 Spiced Beer, including allowing the use of any spices, herbs, or vegetables. The same general characteristics and fault descriptions apply to Specialty Ciders as to Traditional Ciders (category C1), with the exception of allowable added ingredients. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "This is an open-ended, catch-all category for cider with other ingredients or processes that do not fit any of the previous cider styles in categories C1 through C3. It also may be used for any other type of historical or regional traditional cider not already described. If the cider fits a previous style description, then it is not an Experimental Cider.",
+        "aroma_and_flavor": "The cider character must always be present, and must fit with added ingredients or process effects. If a spirit barrel was used, the character of the spirit (rum, whiskey, etc.) may range from subtle (barely recognizable) to balanced and complementary (short of dominating and overwhelming the cider character). Overall balance and drinkability are the critical success factors for this style. The resulting cider should contain recognizable experimental components, and be pleasant to drink.",
+        "appearance": "Clear to brilliant, as appropriate for the base style. Color should be that of a standard cider unless other ingredients or processes are expected to contribute color.",
+        "mouthfeel": "Reflects the base style, but may also show tannic, astringent, bitter, heavy body, or other characteristics as determined by declared ingredients or processes.",
+        "comments": "Some examples fitting this category include: - Cider with added honey (unless used in New England Cider, or if honey is dominant in the balance, which should be entered as a M2A Cyser under the Mead Guidelines) - Cider with other sweeteners - Ciders with both spices and other (non-apple) fruit - Cider/beer hybrids (graff/graf, snakebite) - Cider with a wood or barrel character that is a significant part of the flavor profile - Cider that otherwise meets existing guideline definitions, except that it is noticeably outside listed style parameters (e.g., strength, sweetness, carbonation) - Regional, traditional, or historical styles not in the guidelines. Regardless of experimental nature, the resulting beverage must be recognizable as a cider. The description of the cider is critical information for judges, and should be sufficient to allow them to understand the concept. If special ingredients are declared, they should be perceived (exception: potential allergens do not need to be perceivable, but must be declared). Experimental cider may exceed the typical Vital Statistics ranges for declared base styles, especially when based on concentrated styles (C2C or C2D).",
+        "entry_instructions": "Entrants MUST specify the ingredients or processes that make the entry an experimental cider. Entrants MUST specify both carbonation and sweetness levels. Entrants MAY specify a base style, or provide a more detailed description of the concept.",
+        "varieties": "Any, depending on base cider",
+        "vital_statistics": "OG: 1.045 - 1.100 FG: 0.995 - 1.020 ABV: 5 - 12%",
+        "commercial_examples": "Cidergeist Beezy, Domaine Dupoint Cidre Reserve, Finnriver Fire Barrel, Snowdrift Cornice, Tandem Ciders Bee's Dream, Uncle John's Blossom Blend, Uncle John's Sidra de Tepache"
+      }
+    },
+    "C4A": {
+      "code": "C4A",
+      "name": "Common Perry",
+      "category": "Perry",
+      "category_description": "Perry is the fermented juice of crushed pears. Pear must represent the majority of fermentables in the beverage. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "Common Perry is made from culinary (table) pears.",
+        "overall_impression": "Mildly fruity, fuller-bodied. Usually semi-dry to semi-sweet. Still to pétillant, typically. Only very slight acetification is acceptable.",
+        "aroma_and_flavor": "There is a fruity pear character, which can be mild but increases in sweeter examples. The pear character reflects flavors expected of fermented table pears, which may not taste strongly like fresh pears. Drier versions tend toward a profile similar to a young white wine. The acidity level should be mild to balanced, not sharp. Tannins can be mild to balanced, but should not add significant bitterness. The balance of acid and tannins is variable, but is generally even to acid-forward. Should not be mousy, ropy, or oily.",
+        "appearance": "Slightly cloudy to clear. Generally quite pale, with a straw to gold color.",
+        "mouthfeel": "Relatively full body. Low to moderate tannins apparent as astringency. Still to sparkling carbonation, although most are no more than medium.",
+        "comments": "Compared to Heirloom Perry, Common Perry has less tannin, more of a table fruit character, and can have more acidity. Some table pears contain significant amounts of sorbitol, which may give a dry perry an impression of sweetness. The perception of sorbitol as sweet is highly variable from one person to the next. Hence, entrants should specify sweetness according to actual residual sugar amount, and judges must be aware that they might perceive more sweetness than how the perry was entered. Back-sweetening with raw pear juice to achieve a recognizable flavor profile can be found in commercial examples, but this is not necessarily authentic or expected in perry from areas with a long, continuous tradition. The name common implies lack of rarity, not lack of quality or class. Sometimes called New World Perry or Modern Perry.",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels.",
+        "varieties": "Bartlett, Kiefer, Comice, Conference",
+        "vital_statistics": "OG: 1.050 - 1.060 FG: 1.000 - 1.020 ABV: 5 - 8%",
+        "commercial_examples": "Æppeltreow Perry, EdenVale Pear Cider, Seattle Cider Perry, Snowdrift Semi-Dry Perry, Twin Pines Hammer Bent Perry, Uncle John's Perry"
+      }
+    },
+    "C4B": {
+      "code": "C4B",
+      "name": "Heirloom Perry",
+      "category": "Perry",
+      "category_description": "Perry is the fermented juice of crushed pears. Pear must represent the majority of fermentables in the beverage. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A traditional perry made from \"perry pears\" grown specifically for that purpose, rather than for eating or cooking. Many of these varieties are nearly inedible due to high tannins; some are also quite hard. Perry pears may contain substantial amounts of sorbitol, a non-fermentable, sweet-tasting sugar alcohol. Hence a perry can exhibit the impression of sweetness, yet be completely dry (no RS).",
+        "overall_impression": "Tannic and somewhat fruity, with a fuller body. English examples tend to be drier than French examples, so the sweetness level is variable. English and French examples may be carbonated to higher levels.",
+        "aroma_and_flavor": "There is a noticeable fermented pear character, which can be subtle to quite fruity. The pear character can be more complex than a Common Perry, and does not taste strongly of table pears. The impression often tends toward that of a young white wine. A slight tannic bitterness is possible. The acidity level should be balanced, not sharp, as typically more tannin is present than acidity. Sorbitol may contribute to the impression of sweetness. Should not be mousy, ropy, or oily. Perry can sometimes have a very low level of natural acetification, which is unrelated to contamination.",
+        "appearance": "Slightly cloudy to clear. Generally quite pale, with a straw to gold color. Still to sparkling carbonation, although most are no more than medium.",
+        "mouthfeel": "Relatively full body. Moderate to high tannin apparent as astringency. Sorbitol can provide a smooth and slick texture. Should not seem syrupy.",
+        "comments": "Compared to Common Perry, Heirloom Perry is more tannin-forward, may have some bitterness, and has a more complex pear flavor. Note that a dry perry may give an impression of sweetness due to sorbitol in the pears, and perception of sorbitol as sweet is highly variable from one person to another. Hence entrants should specify sweetness according to actual residual sugar amount, and judges must be aware that they might perceive more sweetness than how the perry was entered. Back-sweetening with raw pear juice to achieve a recognizable flavor profile can be found in some commercial examples, but this is not necessarily authentic or expected in perry from areas with a long, continuous tradition. Sometimes called Traditional Perry or Heritage Perry. The name heirloom implies the use of older, not-widely-grown perry pear varieties, not that there is some added prestige, especially relative to Common Perry.",
+        "entry_instructions": "Entrants MUST specify both carbonation and sweetness levels.",
+        "varieties": "Butt, Gin, Brandy, Barland, Blakeney Red, Thorn, Moorcroft",
+        "vital_statistics": "OG: 1.050 - 1.070 FG: 1.000 - 1.020 ABV: 4 - 9%",
+        "commercial_examples": "Æppeltreow Orchard Oriole Perry, Burrow Hill Perry, Christian Drouin Poiré, Dragon's Head Sparkling Perry, Eric Bordelet Poiré Authentique, EZ Orchards Poire, Hogan's Classic Perry (UK), Oliver's Classic Perry"
+      }
+    },
+    "C4C": {
+      "code": "C4C",
+      "name": "Ice Perry",
+      "category": "Perry",
+      "category_description": "Perry is the fermented juice of crushed pears. Pear must represent the majority of fermentables in the beverage. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "A regional style (Poiré de Glace) originating in Quebec in the 2000s, often produced by cideries or domaines where ice cider is made using a similar process. Pear juice is frozen before fermentation to concentrate sugars. Fermentation is often arrested before completion to achieve the desired sweetness level. Sweeteners must not be used to adjust the starting or finishing gravity.",
+        "overall_impression": "Full-bodied, bright, and fruity, with a balanced acidity. Sweet, but not cloying. Still to pétillant.",
+        "aroma_and_flavor": "Fruity, smooth, sweet-tart. The fruit aroma is clear and bright, often like poached pears, fruit preserves, or candied peaches. The light to moderate fruit flavors can seem like pears that have been cooked, dried, preserved, candied, or caramelized. The soft, rounded finish may have additional notes of honey, nuts, pastries, or tropical fruit. Acidity must be sufficient to prevent it from seeming to be cloying. May be tannic (astringent or bitter) but this should be slight to moderate at most. Should not be mousy, ropy, or oily. Noticeable acetone is a fault. Only very slight acetification is acceptable.",
+        "appearance": "Gold to amber color. Clear to crystal clear. Usually still, but light evidence of carbonation is allowed.",
+        "mouthfeel": "Full body. Supple, smooth texture, with a very long, silky finish. Alcohol warmth is light to moderately low, although may not be perceivable due to the sweetness. Most examples are still, but a light carbonation is acceptable.",
+        "comments": "While originating in Canada, not exclusively a Canadian product. The level of tannin and acidity is noticeably lower than in Ice Cider.",
+        "entry_instructions": "Entrants MUST specify starting gravity, final gravity or residual sugar, alcohol level, and carbonation level.",
+        "varieties": "Bartlett, Bosc, Flemish Beauty, other table pears",
+        "vital_statistics": "OG: 1.130 - 1.170 FG: 1.050 - 1.085 ABV: 9 - 12%",
+        "commercial_examples": "Coteau Rougemont Poiré de Glace, Domaine de la Galotière Poiré de Glace, Domaine de Lavoie Poiré de Glace, Vergers Écologiques Philion Gaia, Domaine des Salamandres Le Classique"
+      }
+    },
+    "C4D": {
+      "code": "C4D",
+      "name": "Experimental Perry",
+      "category": "Perry",
+      "category_description": "Perry is the fermented juice of crushed pears. Pear must represent the majority of fermentables in the beverage. See the Introduction to Cider and Perry Styles for detailed sensory characteristics that apply to all styles.",
+      "guide": "BJCP2025",
+      "type": "cider",
+      "sections": {
+        "description": "This is an open-ended, catch-all category for perry with other ingredients or for perry using other processes that result in a product not fitting any other C4 styles, such as pear-based versions of C3A and C3B (fruited or spiced perry). It may also be used for any other type of historical or regional traditional perry not already described, or for perry that otherwise meets existing guideline definitions, except that it is noticeably outside listed style parameters (e.g., strength, sweetness, carbonation). If the perry fits a previously defined style, then it is not an Experimental Perry. Products derived from other pome fruit (e.g., quince) including those berry-like fruit in the Amelanchier genus (e.g., juneberry, serviceberry, saskatoon berry) may be entered here in lieu of a separate category, provided the experimental fruit is dominant in the formulation.",
+        "aroma_and_flavor": "The perry character must always be present, and must fit with added ingredients or process effects. If a spirit barrel was used, the character of the spirit (rum, whiskey, etc.) may range from subtle (barely recognizable) to balanced and complementary (short of dominating and overwhelming the perry character). Overall balance and drinkability are the critical success factors for this style. The resulting perry should contain recognizable experimental components, and be pleasant to drink.",
+        "appearance": "Clear to brilliant. Color should be that of a standard perry unless other declared ingredients or processes contribute color.",
+        "mouthfeel": "If a base style has been declared, the body and mouthfeel should be reflective of that style. Declared ingredients or processes may result in additional body, or in increased tannic, astringent, bitter, or other characteristics.",
+        "comments": "If a mixture of fruit is used, the perry character must remain dominant. Regardless of experimental nature, the resulting beverage must be recognizable as a perry. The description of the perry is critical information for judges, and should be sufficient to allow them to understand the concept. If special ingredients are declared, they should be perceived (exception: potential allergens do not need to be perceivable, but must be declared).",
+        "entry_instructions": "Entrants MUST specify the ingredients or processes that make the entry an experimental perry. Entrants MUST specify both carbonation and sweetness levels. Entrants MAY specify a base style, or provide a more detailed description of the concept.",
+        "varieties": "Any",
+        "vital_statistics": "OG: 1.045 - 1.100 FG: 0.995 - 1.020 ABV: 5 - 12%",
+        "commercial_examples": "Æppeltreow Pear Wine, Sea Cider Ginger Perry, Snow Capped Cider JalaPEARño"
+      }
+    }
+  }
+}

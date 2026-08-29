@@ -1,0 +1,751 @@
+[
+  {
+    "code": "1A",
+    "name": "American Light Lager",
+    "category": "Standard American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "1B",
+    "name": "American Lager",
+    "category": "Standard American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "1C",
+    "name": "Cream Ale",
+    "category": "Standard American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "1D",
+    "name": "American Wheat Beer",
+    "category": "Standard American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "2A",
+    "name": "International Pale Lager",
+    "category": "International Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "2B",
+    "name": "International Amber Lager",
+    "category": "International Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "2C",
+    "name": "International Dark Lager",
+    "category": "International Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "3A",
+    "name": "Czech Pale Lager",
+    "category": "Czech Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "3B",
+    "name": "Czech Premium Pale Lager",
+    "category": "Czech Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "3C",
+    "name": "Czech Amber Lager",
+    "category": "Czech Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "3D",
+    "name": "Czech Dark Lager",
+    "category": "Czech Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "4A",
+    "name": "Munich Helles",
+    "category": "Pale Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "4B",
+    "name": "Festbier",
+    "category": "Pale Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "4C",
+    "name": "Helles Bock",
+    "category": "Pale Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "5A",
+    "name": "German Leichtbier",
+    "category": "Pale Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "5B",
+    "name": "Kölsch",
+    "category": "Pale Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "5C",
+    "name": "German Helles Exportbier",
+    "category": "Pale Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "5D",
+    "name": "German Pils",
+    "category": "Pale Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "6A",
+    "name": "Märzen",
+    "category": "Amber Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "6B",
+    "name": "Rauchbier",
+    "category": "Amber Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "6C",
+    "name": "Dunkles Bock",
+    "category": "Amber Malty European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "7A",
+    "name": "Vienna Lager",
+    "category": "Amber Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "7B",
+    "name": "Altbier",
+    "category": "Amber Bitter European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "8A",
+    "name": "Munich Dunkel",
+    "category": "Dark European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "8B",
+    "name": "Schwarzbier",
+    "category": "Dark European Lager",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "9A",
+    "name": "Doppelbock",
+    "category": "Strong European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "9B",
+    "name": "Eisbock",
+    "category": "Strong European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "9C",
+    "name": "Baltic Porter",
+    "category": "Strong European Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "10A",
+    "name": "Weissbier",
+    "category": "German Wheat Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "10B",
+    "name": "Dunkles Weissbier",
+    "category": "German Wheat Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "10C",
+    "name": "Weizenbock",
+    "category": "German Wheat Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "11A",
+    "name": "Ordinary Bitter",
+    "category": "British Bitter",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "11B",
+    "name": "Best Bitter",
+    "category": "British Bitter",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "11C",
+    "name": "Strong Bitter",
+    "category": "British Bitter",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "12A",
+    "name": "British Golden Ale",
+    "category": "Pale Commonwealth Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "12B",
+    "name": "Australian Sparkling Ale",
+    "category": "Pale Commonwealth Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "12C",
+    "name": "English IPA",
+    "category": "Pale Commonwealth Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "13A",
+    "name": "Dark Mild",
+    "category": "Brown British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "13B",
+    "name": "British Brown Ale",
+    "category": "Brown British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "13C",
+    "name": "English Porter",
+    "category": "Brown British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "14A",
+    "name": "Scottish Light",
+    "category": "Scottish Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "14B",
+    "name": "Scottish Heavy",
+    "category": "Scottish Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "14C",
+    "name": "Scottish Export",
+    "category": "Scottish Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "15A",
+    "name": "Irish Red Ale",
+    "category": "Irish Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "15B",
+    "name": "Irish Stout",
+    "category": "Irish Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "15C",
+    "name": "Irish Extra Stout",
+    "category": "Irish Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "16A",
+    "name": "Sweet Stout",
+    "category": "Dark British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "16B",
+    "name": "Oatmeal Stout",
+    "category": "Dark British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "16C",
+    "name": "Tropical Stout",
+    "category": "Dark British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "16D",
+    "name": "Foreign Extra Stout",
+    "category": "Dark British Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "17A",
+    "name": "British Strong Ale",
+    "category": "Strong British Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "17B",
+    "name": "Old Ale",
+    "category": "Strong British Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "17C",
+    "name": "Wee Heavy",
+    "category": "Strong British Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "17D",
+    "name": "English Barley Wine",
+    "category": "Strong British Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "18A",
+    "name": "Blonde Ale",
+    "category": "Pale American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "18B",
+    "name": "American Pale Ale",
+    "category": "Pale American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "19A",
+    "name": "American Amber Ale",
+    "category": "Amber and Brown American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "19B",
+    "name": "California Common",
+    "category": "Amber and Brown American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "19C",
+    "name": "American Brown Ale",
+    "category": "Amber and Brown American Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "20A",
+    "name": "American Porter",
+    "category": "American Porter and Stout",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "20B",
+    "name": "American Stout",
+    "category": "American Porter and Stout",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "20C",
+    "name": "Imperial Stout",
+    "category": "American Porter and Stout",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "21A",
+    "name": "American IPA",
+    "category": "IPA",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "21B",
+    "name": "Specialty IPA",
+    "category": "IPA",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "21C",
+    "name": "Hazy IPA",
+    "category": "IPA",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "22A",
+    "name": "Double IPA",
+    "category": "Strong American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "22B",
+    "name": "American Strong Ale",
+    "category": "Strong American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "22C",
+    "name": "American Barleywine",
+    "category": "Strong American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "22D",
+    "name": "Wheatwine",
+    "category": "Strong American Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23A",
+    "name": "Berliner Weisse",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23B",
+    "name": "Flanders Red Ale",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23C",
+    "name": "Oud Bruin",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23D",
+    "name": "Lambic",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23E",
+    "name": "Gueuze",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23F",
+    "name": "Fruit Lambic",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "23G",
+    "name": "Gose",
+    "category": "European Sour Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "24A",
+    "name": "Witbier",
+    "category": "Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "24B",
+    "name": "Belgian Pale Ale",
+    "category": "Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "24C",
+    "name": "Bière de Garde",
+    "category": "Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "25A",
+    "name": "Belgian Blond Ale",
+    "category": "Strong Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "25B",
+    "name": "Saison",
+    "category": "Strong Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "25C",
+    "name": "Belgian Golden Strong Ale",
+    "category": "Strong Belgian Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "26A",
+    "name": "Belgian Single",
+    "category": "Monastic Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "26B",
+    "name": "Belgian Dubbel",
+    "category": "Monastic Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "26C",
+    "name": "Belgian Tripel",
+    "category": "Monastic Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "26D",
+    "name": "Belgian Dark Strong Ale",
+    "category": "Monastic Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "28A",
+    "name": "Brett Beer",
+    "category": "American Wild Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "28B",
+    "name": "Mixed-Fermentation Sour Beer",
+    "category": "American Wild Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "28C",
+    "name": "Wild Specialty Beer",
+    "category": "American Wild Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "28D",
+    "name": "Straight Sour Beer",
+    "category": "American Wild Ale",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "29A",
+    "name": "Fruit Beer",
+    "category": "Fruit Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "29B",
+    "name": "Fruit and Spice Beer",
+    "category": "Fruit Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "29C",
+    "name": "Specialty Fruit Beer",
+    "category": "Fruit Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "29D",
+    "name": "Grape Ale",
+    "category": "Fruit Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "30A",
+    "name": "Spice, Herb, or Vegetable Beer",
+    "category": "Spiced Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "30B",
+    "name": "Autumn Seasonal Beer",
+    "category": "Spiced Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "30C",
+    "name": "Winter Seasonal Beer",
+    "category": "Spiced Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "30D",
+    "name": "Specialty Spice Beer",
+    "category": "Spiced Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "31A",
+    "name": "Alternative Grain Beer",
+    "category": "Alternative Fermentables Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "31B",
+    "name": "Alternative Sugar Beer",
+    "category": "Alternative Fermentables Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "32A",
+    "name": "Classic Style Smoked Beer",
+    "category": "Smoked Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "32B",
+    "name": "Specialty Smoked Beer",
+    "category": "Smoked Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "33A",
+    "name": "Wood-Aged Beer",
+    "category": "Wood Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "33B",
+    "name": "Specialty Wood-Aged Beer",
+    "category": "Wood Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "34A",
+    "name": "Commercial Specialty Beer",
+    "category": "Specialty Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "34B",
+    "name": "Mixed-Style Beer",
+    "category": "Specialty Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  },
+  {
+    "code": "34C",
+    "name": "Experimental Beer",
+    "category": "Specialty Beer",
+    "guide": "BJCP2021",
+    "type": "beer"
+  }
+]

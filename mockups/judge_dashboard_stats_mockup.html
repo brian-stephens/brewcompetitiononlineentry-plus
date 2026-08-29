@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Judge Dashboard Mockup — Judging Stats Panel</title>
+<link href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+    body {
+        background: #f4f6f7;
+        padding-bottom: 60px;
+    }
+    .mockup-banner {
+        background: #212529;
+        color: #fff;
+        text-align: center;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        letter-spacing: .03em;
+    }
+    .bcoem-admin-element {
+        padding: 0 0 15px 0;
+    }
+    .text-teal {
+        color: #004D40; /* 900 Shade, matches site's existing .text-teal */
+    }
+    .bg-teal-subtle {
+        background-color: #E0F2F1; /* matches site's .alert-teal background */
+    }
+    .border-teal-subtle {
+        border-color: #B2DFDB !important; /* matches site's .alert-teal border */
+    }
+    .alert-teal {
+        border-color: #B2DFDB;
+        background: #E0F2F1;
+        color: #004D40;
+    }
+    .stat-card {
+        border-radius: .5rem;
+    }
+    .stat-value {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+    .stat-delta-up {
+        color: #1e7e34;
+    }
+    .stat-delta-down {
+        color: #b02a37;
+    }
+    .table-dark th {
+        font-weight: 600;
+    }
+    .sparkline-wrap {
+        position: relative;
+        height: 90px;
+        cursor: crosshair;
+    }
+    .sparkline-swatch {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        margin-right: 2px;
+    }
+    .sparkline-swatch-you {
+        background: #004D40;
+    }
+    .sparkline-swatch-avg {
+        background: #B2DFDB;
+        border: 1px dashed #26A69A;
+    }
+    .anchor {
+        display: block;
+        position: relative;
+        top: -80px;
+        visibility: hidden;
+    }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+    <i class="fa fa-flask me-2"></i>MOCKUP PREVIEW — illustrative data only, not connected to a live database
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa fa-beer-mug-empty me-2"></i>Michigan Beer Cup</a>
+        <div class="navbar-nav">
+            <a class="nav-link active" href="#">Judging Dashboard</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <a name="top"></a>
+    <p class="lead mb-1">Judge Dashboard <small class="text-muted">Welcome back, Sarah!</small></p>
+
+    <div class="mb-3 p-3 text-dark bg-dark-subtle border border-dark-subtle rounded-2">
+        <p class="mb-0"><i class="fa fa-clock me-2"></i><strong>Judging Closes:</strong> <span>1 day 6:42:10</span></p>
+    </div>
+
+    <!-- ================= NEW: Your Judging Stats panel ================= -->
+    <div class="card stat-card border-teal-subtle mb-4">
+        <div class="card-header bg-teal-subtle border-teal-subtle">
+            <strong class="text-teal"><i class="fa fa-chart-line me-2"></i>Your Judging Stats</strong>
+        </div>
+        <div class="card-body">
+
+            <div class="row g-3 mb-3">
+
+                <div class="col-12 col-md-6">
+                    <div class="border rounded-2 p-3 h-100">
+                        <div class="small text-muted text-uppercase">Avg. Words / Entry</div>
+                        <div class="stat-value">142 <span class="fs-6 fw-normal text-muted">words</span></div>
+                        <div class="small mt-1">
+                            <span class="text-muted">Competition average:</span> <strong>108 words</strong>
+                            &nbsp;<span class="badge rounded-pill text-bg-success"><i class="fa fa-arrow-up me-1"></i>31% above avg.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="border rounded-2 p-3 h-100">
+                        <div class="small text-muted text-uppercase">Avg. Time / Entry</div>
+                        <div class="stat-value">08:41 <span class="fs-6 fw-normal text-muted">min:sec</span></div>
+                        <div class="small mt-1">
+                            <span class="text-muted">Competition average:</span> <strong>06:55 min:sec</strong>
+                            &nbsp;<span class="badge rounded-pill text-bg-success"><i class="fa fa-arrow-up me-1"></i>25% more time</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="small text-muted mb-0">
+                <i class="fa fa-circle-info me-1"></i>
+                Based on <strong>12</strong> entries you've judged so far (competition-wide: <strong>96</strong> evaluations from <strong>9</strong> judges).
+                Time stats only reflect entries judged since this feature was enabled.
+            </p>
+
+            <hr class="my-3">
+
+            <div class="d-flex justify-content-between align-items-baseline mb-2">
+                <strong class="small text-uppercase text-muted">Your Trend This Competition</strong>
+                <span class="small text-muted"><span class="sparkline-swatch sparkline-swatch-you"></span> Your rolling avg. &nbsp; <span class="sparkline-swatch sparkline-swatch-avg"></span> Competition avg.</span>
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-12 col-md-6">
+                    <div class="border rounded-2 p-2">
+                        <div class="d-flex justify-content-between small text-muted">
+                            <span>Words / Entry (rolling avg.)</span>
+                            <span class="fw-semibold text-teal">142 <i class="fa fa-arrow-trend-up ms-1"></i></span>
+                        </div>
+                        <div class="sparkline-wrap">
+                            <canvas id="sparkWords"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="border rounded-2 p-2">
+                        <div class="d-flex justify-content-between small text-muted">
+                            <span>Time / Entry (rolling avg.)</span>
+                            <span class="fw-semibold text-teal">08:41 <i class="fa fa-arrow-trend-down ms-1"></i></span>
+                        </div>
+                        <div class="sparkline-wrap">
+                            <canvas id="sparkTime"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="small text-muted mt-2 mb-0">
+                <i class="fa fa-circle-info me-1"></i>
+                Each point shows your average up through that entry. Hover over a graph to see your average and the competition average at that point.
+            </p>
+
+        </div>
+    </div>
+    <!-- ================= END: Your Judging Stats panel ================= -->
+
+    <h2>Table Assignments</h2>
+    <table class="table table-condensed table-striped table-bordered border-dark-subtle">
+        <thead>
+            <tr class="table-dark">
+                <th>Session</th>
+                <th width="30%">Date</th>
+                <th width="30%">Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sat, Jul 18 &bull; 10:00 AM</td>
+                <td><a href="#table12">Table 12 - IPA / Pale Ale</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sat, Jul 18 &bull; 1:30 PM</td>
+                <td><a href="#table18">Table 18 - Stout / Porter</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a name="table12"></a>
+    <h3 class="mt-5">Table 12 - IPA / Pale Ale <br><small class="fs-5 fw-lighter text-body-secondary">Main Hall &bull; Sat, Jul 18, 10:00 AM</small></h3>
+
+    <div class="row small bcoem-admin-element">
+        <div class="col-12 col-sm-8">
+            <section class="row">
+                <div class="col-7"><strong>Assigned Judges</strong></div>
+                <div class="col-5">Sarah M., Tom R.</div>
+            </section>
+            <section class="row">
+                <div class="col-7"><strong>Table Entries</strong></div>
+                <div class="col-5">14</div>
+            </section>
+            <section class="row">
+                <div class="col-7"><strong>Entries Scored</strong></div>
+                <div class="col-5">12 <span class="fs-6 text-lowercase">of</span> 14</div>
+            </section>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="text-end text-teal"><i class="fa fa-gavel me-1"></i>Head Judge</div>
+        </div>
+    </div>
+
+    <div class="table-responsive-md">
+    <table class="table table-condensed table-striped table-bordered border-dark-subtle">
+        <thead>
+            <tr class="table-dark">
+                <th width="5%">Number</th>
+                <th width="30%">Style / Info</th>
+                <th width="30%">Notes</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-primary">
+                <td><a class="anchor" name="000201"></a>000201</td>
+                <td>21A - American IPA
+                    <div class="mt-2"><small><ul class="list-unstyled">
+                        <li><strong>ABV:</strong> 6.8%</li>
+                    </ul></small></div>
+                </td>
+                <td><span class="badge text-bg-success">Scored</span></td>
+                <td><a href="#" class="btn btn-sm btn-secondary">Edit</a></td>
+            </tr>
+            <tr class="text-primary">
+                <td><a class="anchor" name="000202"></a>000202</td>
+                <td>21B - Specialty IPA
+                    <div class="mt-2"><small><ul class="list-unstyled">
+                        <li><strong>ABV:</strong> 7.2%</li>
+                    </ul></small></div>
+                </td>
+                <td><span class="badge text-bg-success">Scored</span></td>
+                <td><a href="#" class="btn btn-sm btn-secondary">Edit</a></td>
+            </tr>
+            <tr>
+                <td><a class="anchor" name="000203"></a>000203</td>
+                <td>18B - American Pale Ale</td>
+                <td></td>
+                <td><a href="#" class="btn btn-sm btn-primary">Add</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</div>
+
+<script>
+    function formatMinSec(decimalMinutes) {
+        const mins = Math.floor(decimalMinutes);
+        const secs = Math.round((decimalMinutes - mins) * 60);
+        return mins + ':' + String(secs).padStart(2, '0');
+    }
+
+    function buildSparkline(canvasId, rollingAvg, compAvg, opts) {
+        opts = opts || {};
+        const formatValue = opts.formatValue || (v => v);
+
+        return new Chart(document.getElementById(canvasId), {
+            type: 'line',
+            data: {
+                labels: rollingAvg.map((_, i) => 'Entry ' + (i + 1)),
+                datasets: [
+                    {
+                        label: 'Your rolling avg.',
+                        data: rollingAvg,
+                        borderColor: '#004D40',
+                        backgroundColor: 'transparent',
+                        borderWidth: 2,
+                        pointRadius: 0,
+                        pointHoverRadius: 4,
+                        pointHoverBackgroundColor: '#004D40',
+                        pointHitRadius: 12,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Competition avg.',
+                        data: rollingAvg.map(() => compAvg),
+                        borderColor: '#26A69A',
+                        borderDash: [4, 4],
+                        borderWidth: 1.5,
+                        pointRadius: 0,
+                        pointHoverRadius: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            title: function(items) {
+                                return items[0].label;
+                            },
+                            label: function(context) {
+                                return context.dataset.label + ': ' + formatValue(context.raw);
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { display: false },
+                    y: { display: false }
+                },
+                elements: { line: { borderJoinStyle: 'round' } }
+            }
+        });
+    }
+
+    // ---- Sparkline: rolling average of words/entry, judge vs. flat competition average ----
+    buildSparkline(
+        'sparkWords',
+        [96, 110, 118, 121, 128, 131, 133, 136, 138, 139, 141, 142],
+        108,
+        { formatValue: v => v + ' words' }
+    );
+
+    // ---- Sparkline: rolling average of time/entry (minutes), judge vs. flat competition average ----
+    buildSparkline(
+        'sparkTime',
+        [11.4, 10.6, 10.1, 9.6, 9.3, 9.0, 8.9, 8.8, 8.75, 8.7, 8.68, 8.68],
+        6.92,
+        { formatValue: v => formatMinSec(v) + ' min' }
+    );
+</script>
+
+</body>
+</html>

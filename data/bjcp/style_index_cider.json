@@ -1,0 +1,114 @@
+[
+  {
+    "code": "C1A",
+    "name": "Common Cider",
+    "category": "Traditional Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C1B",
+    "name": "Heirloom Cider",
+    "category": "Traditional Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C1C",
+    "name": "English Cider",
+    "category": "Traditional Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C1D",
+    "name": "French Cider",
+    "category": "Traditional Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C1E",
+    "name": "Spanish Cider",
+    "category": "Traditional Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C2A",
+    "name": "New England Cider",
+    "category": "Strong Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C2B",
+    "name": "Applewine",
+    "category": "Strong Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C2C",
+    "name": "Ice Cider",
+    "category": "Strong Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C2D",
+    "name": "Fire Cider",
+    "category": "Strong Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C3A",
+    "name": "Fruit Cider",
+    "category": "Specialty Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C3B",
+    "name": "Spiced Cider",
+    "category": "Specialty Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C3C",
+    "name": "Experimental Cider",
+    "category": "Specialty Cider",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C4A",
+    "name": "Common Perry",
+    "category": "Perry",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C4B",
+    "name": "Heirloom Perry",
+    "category": "Perry",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C4C",
+    "name": "Ice Perry",
+    "category": "Perry",
+    "guide": "BJCP2025",
+    "type": "cider"
+  },
+  {
+    "code": "C4D",
+    "name": "Experimental Perry",
+    "category": "Perry",
+    "guide": "BJCP2025",
+    "type": "cider"
+  }
+]
