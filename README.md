@@ -31,7 +31,7 @@ The biggest challenges of organizing a homebrewing competition is knowing who ha
 
 The best part: **BCOE&M is free and open-source**. Hundreds of competitions around the world have utilized BCOE&M since its [first release](https://brewingcompetitions.com/change-log) back in 2009.
 
-This repository is a fork of that project. It started as the competition site for Michigan Beer Cup and ran the 2026 competition. It is a general BCOE&M fork with quality of life updates, based on BCOE&M 3.0.2. Original software: [brewingcompetitions.com](https://www.brewingcompetitions.com) and [geoffhumphrey/brewcompetitiononlineentry](https://github.com/geoffhumphrey/brewcompetitiononlineentry).
+This repository is a fork of that project. It started as the competition site for Michigan Beer Cup and ran the 2026 competition. It is a general BCOE&M fork with quality of life updates, based on BCOE&M 3.0.3. Original software: [brewingcompetitions.com](https://www.brewingcompetitions.com) and [geoffhumphrey/brewcompetitiononlineentry](https://github.com/geoffhumphrey/brewcompetitiononlineentry).
 
 This is an unofficial fork. It is not affiliated with, endorsed by, or supported by Geoff Humphrey or brewingcompetitions.com. The original authors have no obligation to help with this copy. The software is provided as-is, without warranty of any kind. Use it at your own risk, and keep backups before you install or upgrade. Questions about stock BCOE&M belong on the [original project](https://github.com/geoffhumphrey/brewcompetitiononlineentry). Changes that exist only in this fork should stay here.
 
@@ -106,6 +106,8 @@ Judge Analytics report:
 ![Judge Analytics](docs/screenshots/judge-analytics-report.png)
 
 ### Other changes from stock BCOE&M
+
+Upstream 3.0.3 bug fixes and enhancements are included (shipping display, AABC 2025 conversion, security hardening, bottle label options, and new BJCP ranks). Hungarian language files were not pulled in.
 
 Judging and scoresheets:
 

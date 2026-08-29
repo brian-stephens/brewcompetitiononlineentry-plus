@@ -436,6 +436,90 @@ function blank_to_null($var) {
 	return $var;
 }
 
+function table_limit($style_id,$planning) {
+
+	// If in planning mode, query to see if the style's id is in a  
+	// table's defined styles and whether that table is limiting entries.
+	if ($planning == 1) {
+
+		require (CONFIG.'config.php');
+
+		$db_conn = new MysqliDb($connection);
+		$table_id = "";
+		$table_limit = "";
+		$table_style_ids = "";
+		$return = 0;
+
+		$query_table_entry_limits = sprintf("SELECT id,tableStyles,tableEntryLimit FROM `%s` WHERE tableEntryLimit IS NOT NULL",$prefix."judging_tables");
+		$table_entry_limits = mysqli_query($connection,$query_table_entry_limits);
+		$row_table_entry_limits = mysqli_fetch_assoc($table_entry_limits);
+
+		if ($row_table_entry_limits) {
+
+			do {
+
+				$exploder = explode(",",$row_table_entry_limits['tableStyles']);
+				if (in_array($style_id, $exploder)) {
+					$table_id = $row_table_entry_limits['id'];
+					$table_limit = $row_table_entry_limits['tableEntryLimit'];
+					$table_style_ids = $row_table_entry_limits['tableStyles'];
+				}
+
+			} while($row_table_entry_limits = mysqli_fetch_assoc($table_entry_limits));
+
+		}
+
+		if ((!empty($table_id)) && (!empty($table_limit)) && (!empty($table_style_ids))) {
+
+			$total_table_entries = get_table_info("1","count_total",$table_id,"default","default");
+
+			if ($total_table_entries >= $table_limit) {
+
+				$exploder = explode(",",$table_style_ids);
+
+				foreach (array_unique($exploder) as $value) {
+
+					$update_table = $prefix."styles";
+					$data = array(
+						'brewStyleAtLimit' => 1
+					);
+					$db_conn->where ('id', $value);
+					$result = $db_conn->update ($update_table, $data);
+					if ($result) $return += 1;
+
+				}
+			
+			}
+
+			if ($total_table_entries < $table_limit) {
+
+				$exploder = explode(",",$table_style_ids);
+
+				foreach (array_unique($exploder) as $value) {
+
+					$update_table = $prefix."styles";
+					$data = array(
+						'brewStyleAtLimit' => NULL
+					);
+					$db_conn->where ('id', $value);
+					$result = $db_conn->update ($update_table, $data);
+					if ($result) $return += 1;
+
+				}
+			
+			}
+
+		}
+
+		if ($return > 0) return TRUE;
+		else return FALSE;
+		
+	}
+
+	else return FALSE;
+
+}
+
 // Standardize name languages
 $name_check_langs = array("en", "fr", "es", "pt", "it", "de", "nl");
 $last_name_exception_langs = array("nl", "es", "de");

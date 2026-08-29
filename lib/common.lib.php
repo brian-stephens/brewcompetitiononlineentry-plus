@@ -2047,6 +2047,8 @@ function bjcp_rank($rank,$method) {
 			break;
 
 			case "Certified": 
+			case "Distinguished Certified":
+			case "BJCP Certified Mead and/or Cider Only":
 			case "Certified Cider Guide":
 			case "Mead Judge":
 			case "Cider Judge": 
@@ -2054,6 +2056,7 @@ function bjcp_rank($rank,$method) {
 			break;
 			
 			case "National":
+			case "Distinguished National":
 			case "Certified Cicerone":
 			case "Certified Pommelier":
 			$return = "Level 4:"; 
@@ -2096,6 +2099,7 @@ function bjcp_rank($rank,$method) {
 			case "Certified Cicerone":
 			case "Master Cicerone":
 			case "Judge with Sensory Training":
+			case "BJCP Certified Mead and/or Cider Only":
 			$return = $rank; 
 			break;
 			

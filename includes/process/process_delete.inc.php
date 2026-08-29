@@ -310,6 +310,22 @@ if ((isset($_SERVER['HTTP_REFERER'])) && ((isset($_SESSION['loginUsername'])) &&
 
 	elseif (($admin_user) && ($go == "entries")) {
 
+		$query_brews = sprintf("SELECT id, brewStyle, brewCategory, brewCategorySort, brewSubCategory FROM $brewing_db_table WHERE id='%s'", $id);
+		$brews = mysqli_query($connection,$query_brews);
+		$row_brews = mysqli_fetch_assoc($brews);
+
+		if ($row_brews) {
+			if ($_SESSION['prefsStyleSet'] == "BJCP2025") {
+				$first_character = mb_substr($row_brews['brewCategorySort'], 0, 1);
+				if ($first_character == "C") $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='BJCP2025' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+				else $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='BJCP2021' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+			}
+			else $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='%s' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $_SESSION['prefsStyleSet'], $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+			$style_name = mysqli_query($connection,$query_style_name);
+			$row_style_name = mysqli_fetch_assoc($style_name);
+			if ((!empty($row_style_name['id']))) table_limit($row_style_name['id'],1);
+		}
+
 		$db_conn->where ('id', $id);
 		$result = $db_conn->delete($dbTable);
 		if (!$result) {
@@ -499,19 +515,38 @@ if ((isset($_SERVER['HTTP_REFERER'])) && ((isset($_SESSION['loginUsername'])) &&
 
 			if ($row_user['userLevel'] == 2) {
 
-				$query_brews = sprintf("SELECT id FROM $brewing_db_table WHERE brewBrewerId = '%s' AND id='%s'", $row_user['id'], $id);
-				$brews = mysqli_query($connection,$query_brews) or die (mysqli_error($connection));
+				$query_brews = sprintf("SELECT id, brewStyle, brewCategory, brewCategorySort, brewSubCategory FROM $brewing_db_table WHERE brewBrewerId = '%s' AND id='%s'", $row_user['id'], $id);
+				$brews = mysqli_query($connection,$query_brews);
 				$row_brews = mysqli_fetch_assoc($brews);
 
 				if ($row_brews) $entry_allow_delete = TRUE;
 
 			}
 
+			elseif (($admin_user) || ($admin_superuser)) {
+				$query_brews = sprintf("SELECT id, brewStyle, brewCategory, brewCategorySort, brewSubCategory FROM $brewing_db_table WHERE id='%s'", $id);
+				$brews = mysqli_query($connection,$query_brews);
+				$row_brews = mysqli_fetch_assoc($brews);
+			}
+
 			if ($entry_allow_delete) {
 
 				$db_conn->where ('id', $id);
 				$result = $db_conn->delete($dbTable);
-				if (!$result) {
+				if ($result) {
+					if ((!empty($row_brews['brewCategorySort'])) && (!empty($row_brews['brewSubCategory']))) {
+						if ($_SESSION['prefsStyleSet'] == "BJCP2025") {
+							$first_character = mb_substr($row_brews['brewCategorySort'], 0, 1);
+							if ($first_character == "C") $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='BJCP2025' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+							else $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='BJCP2021' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+						}
+						else $query_style_name = sprintf("SELECT id FROM %s WHERE (brewStyleVersion='%s' OR brewStyleOwn='custom') AND brewStyleGroup='%s' AND brewStyleNum='%s'", $prefix."styles", $_SESSION['prefsStyleSet'], $row_brews['brewCategorySort'], $row_brews['brewSubCategory']);
+						$style_name = mysqli_query($connection,$query_style_name);
+						$row_style_name = mysqli_fetch_assoc($style_name);
+						if (!empty($row_style_name['id'])) table_limit($row_style_name['id'],1);
+					}
+				}
+				else {
 					$error_output[] = $db_conn->getLastError();
 					$errors = TRUE;
 				}

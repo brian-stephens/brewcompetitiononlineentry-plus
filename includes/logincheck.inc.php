@@ -43,8 +43,8 @@ if (strlen($entered_password) > 72) {
 	exit;
 }
 
-mysqli_real_escape_string($connection,$loginUsername);
-mysqli_real_escape_string($connection,$entered_password);
+$loginUsername = mysqli_real_escape_string($connection,$loginUsername);
+$entered_password = mysqli_real_escape_string($connection,$entered_password);
 $entered_password = md5($entered_password);
 
 /**
@@ -57,7 +57,7 @@ if ($section == "update") {
 	$loginUsername = strtolower($loginUsername);	
 	
 	$query_login = sprintf("SELECT * FROM %s WHERE user_name = '%s'",$prefix."users",$loginUsername);
-	$login = mysqli_query($connection,$query_login) or die (mysqli_error($connection));
+	$login = mysqli_query($connection,$query_login);
 	$row_login = mysqli_fetch_assoc($login);
 	$totalRows_login = mysqli_num_rows($login);
 	
@@ -79,7 +79,7 @@ if ($section != "update") {
 	$loginUsername = strtolower($loginUsername);	
 	
 	$query_login = sprintf("SELECT * FROM %s WHERE user_name = '%s'", $prefix."users",$loginUsername);
-	$login = mysqli_query($connection,$query_login) or die (mysqli_error($connection));
+	$login = mysqli_query($connection,$query_login);
 	$row_login = mysqli_fetch_assoc($login);
 	$totalRows_login = mysqli_num_rows($login);
 	
@@ -99,13 +99,11 @@ if ($check == 1) {
 	
 	// Register the loginUsername but first update the db record to make sure the the user name is stored as all lowercase.
 	$updateSQL = sprintf("UPDATE %s SET user_name='%s' WHERE id='%s'",$prefix."users",$loginUsername, $row_login['id']);
-	mysqli_real_escape_string($connection,$updateSQL);
-	$result = mysqli_query($connection,$updateSQL) or die (mysqli_error($connection));
+	$result = mysqli_query($connection,$updateSQL);
 
 	// Convert email address in the user's accociated record in the "brewer" table
 	$updateSQL = sprintf("UPDATE %s SET brewerEmail='%s' WHERE uid='%s'",$prefix."brewer",$loginUsername, $row_login['id']);
-	mysqli_real_escape_string($connection,$updateSQL);
-	$result = mysqli_query($connection,$updateSQL) or die (mysqli_error($connection));
+	$result = mysqli_query($connection,$updateSQL);
 	
 	// Register the session variable
 	$_SESSION['loginUsername'] = $loginUsername;

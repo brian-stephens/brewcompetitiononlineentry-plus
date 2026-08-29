@@ -783,7 +783,7 @@ if ($setup_free_access == TRUE) {
 			`prefsTieBreakRule4` varchar(255) DEFAULT NULL,
 			`prefsTieBreakRule5` varchar(255) DEFAULT NULL,
 			`prefsTieBreakRule6` varchar(255) DEFAULT NULL,
-			`prefsEntryForm` char(1) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+			`prefsEntryForm` int(2) DEFAULT NULL,
 			`prefsRecordLimit` int(11) DEFAULT '300' COMMENT 'User defined record limit for using DataTables vs. PHP paging',
 			`prefsRecordPaging` int(11) DEFAULT '100' COMMENT 'User defined per page record limit',
 			`prefsProEdition` tinyint(1) DEFAULT NULL,

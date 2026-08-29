@@ -51,7 +51,7 @@ if ((($action == "default") && ($filter == "default")) || ($section == "step7") 
 
 			$table_body .= "<tr>";
 			$table_body .= "<input type=\"hidden\" name=\"id[]\" value=\"".$row_styles['id']."\" />";
-			if ($bid == "default") $table_body .= "<td width=\"1%\" nowrap><input name=\"brewStyleActive".$row_styles['id']."\" type=\"checkbox\" value=\"Y\" ".$brewStyleActive."></td>";
+			if ($bid == "default") $table_body .= "<td width=\"1%\" nowrap><input class=\"enable-style\" name=\"brewStyleActive".$row_styles['id']."\" type=\"checkbox\" value=\"Y\" ".$brewStyleActive."></td>";
 			if ($bid != "default") $table_body .= "<td width=\"1%\" nowrap><input name=\"brewStyleJudgingLoc".$row_styles['id']."\" type=\"checkbox\" value=\"".$bid."\" ".$brewStyleJudgingLoc."></td>";
 			$table_body .= "<td>".$row_styles['brewStyle']."</td>";
 			if ($_SESSION['prefsStyleSet'] == "BA") {
@@ -123,16 +123,29 @@ if ($section != "step7") { ?>
 				{ "asSorting": [  ] }
 				]
 			} );
+		$('.enable-style').on('change', syncSelectAll);
+		syncSelectAll();
 		} );
 
+function syncSelectAll() {
+	var boxes = document.querySelectorAll('.enable-style');
+	var all = document.getElementById('select-all-enable');
+	if (!all) return;
+	var checked = 0;
+	for (var i = 0; i < boxes.length; i++) {
+		if (boxes[i].checked) checked++;
+	}
+	all.checked = (boxes.length > 0 && checked === boxes.length);
+}
+function handleSelectAll(el) {
+	var boxes = document.querySelectorAll('.enable-style');
+	for (var i = 0; i < boxes.length; i++) {
+		boxes[i].checked = el.checked;
+	}
+}
 function checkUncheckAll(theElement) {
-     var theForm = theElement.form, z = 0;
-	 for(z=0; z<theForm.length;z++){
-      if(theForm[z].type == 'checkbox' && theForm[z].name != 'checkall'){
-	  theForm[z].checked = theElement.checked;
-	  }
-     }
-    }
+	handleSelectAll(theElement);
+}
 </script>
 
 <form name="form1" method="post" action="<?php echo $base_url; ?>includes/process.inc.php?section=<?php if ($section == "step7") echo "setup"; else echo $section; ?>&amp;action=update&amp;dbTable=<?php echo $styles_db_table; ?>&amp;filter=<?php echo $filter; if ($bid != "default") echo "&amp;bid=".$bid; ?>">
@@ -140,7 +153,7 @@ function checkUncheckAll(theElement) {
 <table class="table table-responsive table-striped table-bordered" id="sortable">
 <thead>
  <tr>
-  <th><input type="checkbox" name="checkall" onclick="checkUncheckAll(this);"/></th>
+  <th><input type="checkbox" name="checkall" id="select-all-enable" onclick="handleSelectAll(this);"/></th>
   <th>Style Name</th>
   <th><?php if (strpos($_SESSION['prefsStyleSet'],"BJCP") === false) echo "Overall Category"; else echo "#"; ?></th>
   <th>Style Type</th>

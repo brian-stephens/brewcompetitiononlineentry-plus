@@ -225,41 +225,46 @@ else {
 }
 
 // Shipping Card
-if ($shipping_window_open == 1) {
+$glance_shipping = "";
+if ((isset($_SESSION['contestShippingAddress'])) && ($_SESSION['prefsShipping'] == 1)) {
 
-	$body_content = "<ul class=\"list-unstyled\">";
-	$body_content .= "<li><strong>".$label_open."</strong> &ndash; ".$shipping_open_sidebar."</li>";
-	$body_content .= "<li><strong>".$label_close."</strong> &ndash; ".$shipping_closed_sidebar."</li>";
-	$body_content .= "<li id=\"shipping-close-date-item\"><i class=\"fa fa-clock me-1\"></i><span id=\"shipping-close-date\"></span></li>";
-	$body_content .= "</ul>";
+	if ($shipping_window_open == 1) {
 
-	$glance_shipping = array(
-		"color" => $glance_open_color,
-		"status" => $glance_pill_open_text,
-		"body-content" => $body_content,
-		"button1" => array(),
-		"button2" => array(),
-		"button-color" => $glance_open_color,
-	);
-	
-}
+		$body_content = "<ul class=\"list-unstyled\">";
+		$body_content .= "<li><strong>".$label_open."</strong> &ndash; ".$shipping_open_sidebar."</li>";
+		$body_content .= "<li><strong>".$label_close."</strong> &ndash; ".$shipping_closed_sidebar."</li>";
+		$body_content .= "<li id=\"shipping-close-date-item\"><i class=\"fa fa-clock me-1\"></i><span id=\"shipping-close-date\"></span></li>";
+		$body_content .= "</ul>";
 
-else {
+		$glance_shipping = array(
+			"color" => $glance_open_color,
+			"status" => $glance_pill_open_text,
+			"body-content" => $body_content,
+			"button1" => array(),
+			"button2" => array(),
+			"button-color" => $glance_open_color,
+		);
+		
+	}
 
-	$body_content = "<ul class=\"list-unstyled\">";
-	$body_content .= "<li><strong>".$label_open."</strong> &ndash; ".$shipping_open_sidebar."</li>";
-	if ($shipping_window_open == 0) $body_content .= "<li><i class=\"fa fa-clock me-1\"></i><span id=\"shipping-open-date\"></span></li>";
-	$body_content .= "<li><strong>".$label_close."</strong> &ndash; ".$shipping_closed_sidebar."</li>";
-	$body_content .= "</ul>";
-	
-	$glance_shipping = array(
-		"color" => $glance_closed_color,
-		"status" => $glance_pill_closed_text,
-		"body-content" => $body_content,
-		"button1" => array(),
-		"button2" => array(),
-		"button-color" => $glance_disabled_color,
-	);
+	else {
+
+		$body_content = "<ul class=\"list-unstyled\">";
+		$body_content .= "<li><strong>".$label_open."</strong> &ndash; ".$shipping_open_sidebar."</li>";
+		if ($shipping_window_open == 0) $body_content .= "<li><i class=\"fa fa-clock me-1\"></i><span id=\"shipping-open-date\"></span></li>";
+		$body_content .= "<li><strong>".$label_close."</strong> &ndash; ".$shipping_closed_sidebar."</li>";
+		$body_content .= "</ul>";
+		
+		$glance_shipping = array(
+			"color" => $glance_closed_color,
+			"status" => $glance_pill_closed_text,
+			"body-content" => $body_content,
+			"button1" => array(),
+			"button2" => array(),
+			"button-color" => $glance_disabled_color,
+		);
+
+	}
 
 }
 
@@ -512,7 +517,7 @@ if (($section == "list") || ($section == "pay")) {
 	if (($_SESSION['brewerJudge'] == "Y") || ($_SESSION['brewerSteward'] == "Y")) $glance_cards[$label_judging] = $glance_judging;
 	if ($at_a_glance_entry_info) $glance_cards[$label_entry_registration] = $glance_entry_reg;
 	if ((!empty($dropoff_open_sidebar)) && ($at_a_glance_entry_info)) $glance_cards[$label_entry_drop_off] = $glance_drop_off;
-	if ((!empty($shipping_open_sidebar)) && ($at_a_glance_entry_info)) $glance_cards[$label_entry_shipping] = $glance_shipping;
+	if ((isset($_SESSION['contestShippingAddress'])) && ($_SESSION['prefsShipping'] == 1) && (!empty($shipping_open_sidebar)) && ($at_a_glance_entry_info) && (!empty($glance_shipping))) $glance_cards[$label_entry_shipping] = $glance_shipping;
 
 	$row_class = "row row-cols-1 g-4 justify-content-center";
 
@@ -530,7 +535,7 @@ else {
 	$glance_cards[$label_judge_reg] = $glance_judge_reg;
 	$glance_cards[$label_steward_reg] = $glance_steward_reg;
 	if (!empty($dropoff_open_sidebar)) $glance_cards[$label_entry_drop_off] = $glance_drop_off;
-	if (!empty($shipping_open_sidebar)) $glance_cards[$label_entry_shipping] = $glance_shipping;
+	if ((isset($_SESSION['contestShippingAddress'])) && ($_SESSION['prefsShipping'] == 1) && (!empty($shipping_open_sidebar)) && (!empty($glance_shipping))) $glance_cards[$label_entry_shipping] = $glance_shipping;
 
 	$row_class = "row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 justify-content-center mt-1";
 

@@ -584,7 +584,7 @@ if (((strpos($section, "step") === FALSE) && ($section != "setup")) && ($section
     else $entries_unconfirmed = ($totalRows_log - $totalRows_log_confirmed);
 }
 
-$barcode_qrcode_array = array("0","2","N","C","3","4","5","6","1");
+$barcode_qrcode_array = array("0","1","2","3","5","6","11","N","C");
 $no_entry_form_array = array("0","1","2","E","C");
 
 if ($logged_in) $location_target = "_blank";

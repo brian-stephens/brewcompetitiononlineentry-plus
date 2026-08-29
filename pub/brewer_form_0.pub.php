@@ -149,7 +149,7 @@ if (($pro_entrant) && (!$show_judge_steward_fields)) {
             <div class="help-block mb-1 invalid-feedback text-danger"><?php echo $brewer_text_025; ?></div>
         </div>
     </div>
-    <?php if (($go != "admin") && ($section != "step2")) { ?>
+    <?php if (($go != "admin") && ($section != "admin") && ($section != "step2")) { ?>
     <div class="mb-3 row">
         <label for="changeSecurity" class="col-xs-12 col-sm-3 col-lg-2 col-form-label"><strong><?php echo $label_change_security; ?></strong></label>
         <div class="col-xs-12 col-sm-9 col-lg-10">
@@ -179,7 +179,7 @@ if (($pro_entrant) && (!$show_judge_steward_fields)) {
         <div class="mb-3 row">
             <label for="userQuestionAnswer" class="col-xs-12 col-sm-3 col-lg-2 col-form-label text-teal"><i class="fa fa-star me-1"></i><strong><?php if (($_SESSION['prefsProEdition'] == 1) && ($go == "entrant")) echo $label_contact." "; echo $label_security_answer; ?></strong></label>
             <div class="col-xs-12 col-sm-9 col-lg-10">
-                <input class="form-control" name="userQuestionAnswer" id="userQuestionAnswer" type="text" placeholder="" value="<?php if ($action == "edit") echo $_SESSION['userQuestionAnswer']; ?>">
+                <input class="form-control" name="userQuestionAnswer" id="userQuestionAnswer" type="text" placeholder="" value="">
                 <div class="help-block"><?php echo $register_text_050; ?></div>
                 <div class="help-block mb-1 invalid-feedback text-danger"><?php echo $brewer_text_034; ?></div>
             </div>

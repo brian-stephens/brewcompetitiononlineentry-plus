@@ -152,7 +152,7 @@ if (($pro_entrant) && (!$show_judge_steward_fields)) {
             <div class="help-block with-errors"></div>
         </div>
     </div>
-    <?php if (($go != "admin") && ($section != "step2")) { ?>
+    <?php if (($go != "admin") && ($section != "admin") && ($section != "step2")) { ?>
     <div class="form-group"><!-- Form Group Radio INLINE -->
         <label for="changeSecurity" class="col-lg-2 col-md-3 col-sm-4 col-xs-12 control-label"><?php echo $label_change_security; ?></label>
         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
@@ -184,7 +184,7 @@ if (($pro_entrant) && (!$show_judge_steward_fields)) {
             <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
                 <div class="input-group has-warning">
                     <span class="input-group-addon" id="security-question-answer-addon1"><span class="fa fa-bullhorn"></span></span>
-                    <input class="form-control" name="userQuestionAnswer" id="userQuestionAnswer" type="text" placeholder="" value="<?php if ($action == "edit") echo $_SESSION['userQuestionAnswer']; ?>" data-error="<?php echo $brewer_text_034; ?>">
+                    <input class="form-control" name="userQuestionAnswer" id="userQuestionAnswer" type="text" placeholder="" value="" data-error="<?php echo $brewer_text_034; ?>">
                 </div>
                 <div class="help-block"><?php echo $register_text_050; ?></div>
                 <div class="help-block with-errors"></div>

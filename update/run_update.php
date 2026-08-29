@@ -101,7 +101,8 @@ $versions = array(
 	"2.8.2.0" => 30,
 	"3.0.0.0" => 31,
 	"3.0.1.0" => 32,
-	"3.0.2.0" => 33
+	"3.0.2.0" => 33,
+	"3.0.3.0" => 34
 );
 
 $pre_update_version_index = $versions[$row_pv['version']];
@@ -5047,6 +5048,46 @@ if (!$setup_running) $v3000_update .= "</ul>";
 
 $this_update_version_block = $versions['3.0.0.0'];
 if ($pre_update_version_index < $this_update_version_block) $output_run_update .= $v3000_update;
+
+/**
+ * ----------------------------------------------- 3.0.3 ----------------------------------------------
+ */
+
+$v3030_update = "";
+
+if ((!$setup_running) && (!$update_running)) {
+	$v3030_update .= "<p>";
+	$v3030_update .= "<strong>Version 3.0.3.0 Updates</strong>";
+	$v3030_update .= "</p>";
+}
+
+elseif ($update_running) {
+	$v3030_update .= "<h4>Version 3.0.3</h4>";
+}
+
+if (!$setup_running) $v3030_update .= "<ul>";
+
+$sql = sprintf("ALTER TABLE `%s` CHANGE `prefsEntryForm` `prefsEntryForm` INT(2) NULL DEFAULT NULL;", $prefix."preferences");
+mysqli_select_db($connection,$database);
+mysqli_real_escape_string($connection,$sql);
+$result = mysqli_query($connection,$sql);
+if ($result) $v3030_update .= "<li>prefsEntryForm column changed to INT(2).</li>";
+else {
+	$v3030_update .= "<li>prefsEntryForm column NOT changed to INT(2).</li>";
+	$error_count++;
+}
+
+$v3030_update .= "<li>Expanded bottle label options to include four standard and additional anonymous choices.</li>";
+$v3030_update .= "<li>Added BJCP Certified Mead and/or Cider Only, Distinguished Certified, and Distinguished National ranks.</li>";
+$v3030_update .= "<li>Corrected shipping display when shipping location display is disabled.</li>";
+$v3030_update .= "<li>Corrected admin display of hashed security question responses.</li>";
+$v3030_update .= "<li>Corrected AABC 2025 style-set conversion.</li>";
+$v3030_update .= "<li>Corrected minor security issues.</li>";
+
+if (!$setup_running) $v3030_update .= "</ul>";
+
+$this_update_version_block = $versions['3.0.3.0'];
+if ($pre_update_version_index < $this_update_version_block) $output_run_update .= $v3030_update;
 
 /**
  * ---------------------------------------------------------------------------------------------------

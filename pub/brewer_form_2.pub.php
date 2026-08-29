@@ -92,6 +92,10 @@ if (((!$table_assignment) || ($go == "admin")) && (!$entrant_type_brewery)) {
                     <label class="form-check-label">Non-BJCP *</label>
                 </div>
                 <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="BJCP Certified Mead and/or Cider Only" <?php if (($action == "edit") && in_array("BJCP Certified Mead and/or Cider Only",$judge_array)) echo "CHECKED"; ?>>
+                    <label class="form-check-label">BJCP Certified Mead and/or Cider Only</label>
+                </div>
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="Rank Pending" <?php if (($action == "edit")  && in_array("Rank Pending",$judge_array)) echo "CHECKED"; ?>>
                     <label class="form-check-label">Rank Pending</label>
                 </div>
@@ -108,8 +112,16 @@ if (((!$table_assignment) || ($go == "admin")) && (!$entrant_type_brewery)) {
                     <label class="form-check-label">Certified</label>
                 </div>
                 <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="Distinguished Certified" <?php if (($action == "edit") && in_array("Distinguished Certified",$judge_array)) echo "CHECKED"; ?>>
+                    <label class="form-check-label">Distinguished Certified</label>
+                </div>
+                <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="National" <?php if (($action == "edit") && in_array("National",$judge_array)) echo "CHECKED"; ?>>
                     <label class="form-check-label">National</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="Distinguished National" <?php if (($action == "edit") && in_array("Distinguished National",$judge_array)) echo "CHECKED"; ?>>
+                    <label class="form-check-label">Distinguished National</label>
                 </div>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="brewerJudgeRank[]" value="Master" <?php if (($action == "edit") && in_array("Master",$judge_array)) echo "CHECKED"; ?>>
@@ -205,20 +217,26 @@ if (((!$table_assignment) || ($go == "admin")) && (!$entrant_type_brewery)) {
                 <label for="brewerJudgeLikes" class="col-xs-12 col-sm-3 col-lg-2 col-form-label"></label>
                 <div class="col-xs-12 col-sm-9 col-lg-10">
                 <p class="mb-1 small text-danger"><strong><?php echo $brewer_text_012; ?></strong></p>
-                    <?php do {
-                        $style_display = "";
-                        if ($_SESSION['prefsStyleSet'] == "BA") {
-                            if ($row_styles['brewStyleOwn'] == "bcoe") $style_display .= $row_styles['brewStyleCategory'].": ".$row_styles['brewStyle'];
-                            elseif ($row_styles['brewStyleOwn'] == "custom") $style_display .= "Custom: ".$row_styles['brewStyle'];
-                            else $style_display .= $row_styles['brewStyle'];
-                        }
-                        else $style_display .= ltrim($row_styles['brewStyleGroup'], "0").$row_styles['brewStyleNum'].": ".$row_styles['brewStyle'];
-                        ?>
+                    <?php
+                    $styles_selected = array();
+                    $styles_selected = json_decode($_SESSION['prefsSelectedStyles'],true);
+                    if ($_SESSION['prefsStyleSet'] == "BA") array_multisort(array_column($styles_selected, 'brewStyleType'), SORT_ASC, array_column($styles_selected, 'brewStyle'), SORT_ASC, $styles_selected);
+                    else array_multisort(array_column($styles_selected, 'brewStyleGroup'), SORT_ASC, array_column($styles_selected, 'brewStyleNum'), SORT_ASC, $styles_selected);
+                    foreach ($styles_selected as $key => $value) {
+                        if ((isset($value['id'])) && (!empty($value['id']))) {
+                            $style_id = $value['id'];
+                            $style_display = "";
+                            if ($_SESSION['prefsStyleSet'] == "BA") $style_display .= $value['brewStyle'];
+                            else $style_display .= ltrim($value['brewStyleGroup'], "0").$value['brewStyleNum'].": ".$value['brewStyle'];
+                    ?>
                         <div class="form-check small">
-                            <input class="form-check-input" name="brewerJudgeLikes[]" type="checkbox" value="<?php echo $row_styles['id']; ?>" <?php if (isset($row_brewer['brewerJudgeLikes'])) { $a = explode(",", $row_brewer['brewerJudgeLikes']); $b = $row_styles['id']; foreach ($a as $value) { if ($value == $b) echo "CHECKED"; } } ?>>
+                            <input class="form-check-input" name="brewerJudgeLikes[]" type="checkbox" value="<?php echo $style_id; ?>" <?php if (isset($row_brewer['brewerJudgeLikes'])) { $a = explode(",", $row_brewer['brewerJudgeLikes']); foreach ($a as $v) { if ($v == $style_id) echo "CHECKED"; } } ?>>
                             <label class="form-check-label"><?php echo $style_display; ?></label>
                         </div>
-                    <?php } while ($row_styles = mysqli_fetch_assoc($styles)); ?>
+                    <?php
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -237,20 +255,26 @@ if (((!$table_assignment) || ($go == "admin")) && (!$entrant_type_brewery)) {
                 <div class="col-xs-12 col-sm-9 col-lg-10">
                     <p class="mb-1 small text-danger"><strong><?php echo $brewer_text_014; ?></strong></p>
                     <!-- <div class="row"> -->
-                    <?php do {
-                        $style_display = "";
-                        if ($_SESSION['prefsStyleSet'] == "BA") {
-                            if ($row_styles2['brewStyleOwn'] == "bcoe") $style_display .= $row_styles2['brewStyleCategory'].": ".$row_styles2['brewStyle'];
-                            elseif ($row_styles2['brewStyleOwn'] == "custom") $style_display .= "Custom: ".$row_styles2['brewStyle'];
-                            else $style_display .= $row_styles2['brewStyle'];
-                        }
-                        else $style_display .= ltrim($row_styles2['brewStyleGroup'], "0").$row_styles2['brewStyleNum'].": ".$row_styles2['brewStyle'];
-                        ?>
+                    <?php
+                    $styles_selected = array();
+                    $styles_selected = json_decode($_SESSION['prefsSelectedStyles'],true);
+                    if ($_SESSION['prefsStyleSet'] == "BA") array_multisort(array_column($styles_selected, 'brewStyleType'), SORT_ASC, array_column($styles_selected, 'brewStyle'), SORT_ASC, $styles_selected);
+                    else array_multisort(array_column($styles_selected, 'brewStyleGroup'), SORT_ASC, array_column($styles_selected, 'brewStyleNum'), SORT_ASC, $styles_selected);
+                    foreach ($styles_selected as $key => $value) {
+                        if ((isset($value['id'])) && (!empty($value['id']))) {
+                            $style_id = $value['id'];
+                            $style_display = "";
+                            if ($_SESSION['prefsStyleSet'] == "BA") $style_display .= $value['brewStyle'];
+                            else $style_display .= ltrim($value['brewStyleGroup'], "0").$value['brewStyleNum'].": ".$value['brewStyle'];
+                    ?>
                         <div class="form-check small">
-                            <input class="form-check-input" name="brewerJudgeDislikes[]" type="checkbox" value="<?php echo $row_styles2['id']; ?>" <?php if (isset($row_brewer['brewerJudgeDislikes'])) { $a = explode(",", $row_brewer['brewerJudgeDislikes']); $b = $row_styles2['id']; foreach ($a as $value) { if ($value == $b) echo "CHECKED"; } } ?>>
+                            <input class="form-check-input" name="brewerJudgeDislikes[]" type="checkbox" value="<?php echo $style_id; ?>" <?php if (isset($row_brewer['brewerJudgeDislikes'])) { $a = explode(",", $row_brewer['brewerJudgeDislikes']); foreach ($a as $v) { if ($v == $style_id) echo "CHECKED"; } } ?>>
                             <label class="form-check-label"><?php echo $style_display; ?></label>
                         </div>
-                    <?php } while ($row_styles2 = mysqli_fetch_assoc($styles2)); ?>
+                    <?php
+                        }
+                    }
+                    ?>
                     <!-- </div> -->
                 </div>
             </div>

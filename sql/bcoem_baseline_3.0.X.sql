@@ -650,7 +650,7 @@ CREATE TABLE `baseline_preferences` (
   `prefsDisplaySpecial` char(1) DEFAULT NULL,
   `prefsBOSMead` char(1) DEFAULT 'N',
   `prefsBOSCider` char(1) DEFAULT 'N',
-  `prefsEntryForm` char(1) DEFAULT NULL,
+  `prefsEntryForm` int(2) DEFAULT NULL,
   `prefsRecordLimit` int(11) DEFAULT 500 COMMENT 'User defined record limit for using DataTables vs. PHP paging',
   `prefsRecordPaging` int(11) DEFAULT 30 COMMENT 'User defined per page record limit',
   `prefsProEdition` tinyint(1) DEFAULT NULL,

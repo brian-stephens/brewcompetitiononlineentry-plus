@@ -1728,17 +1728,41 @@ include (DB.'entry_info.db.php');
     <select class="selectpicker" name="prefsEntryForm" id="prefsEntryForm" data-size="12" data-width="auto">
         <optgroup label="Print Multiple Entries at a Time">
             <option value="7" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "7")) echo " SELECTED"; ?> />Standard</option>
+            <option value="10" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "10")) echo " SELECTED"; ?> />Standard - Larger Printed Number and Style</option>
             <option value="5" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "5")) echo " SELECTED"; ?> />Standard with Barcode/QR Code</option>
-            <option value="8" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "8")) echo " SELECTED"; ?> />Anonymous</option>
-            <option value="6" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "6")) echo " SELECTED"; ?> />Anonymous with Barcode/QR Code</option>
+            <option value="11" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "11")) echo " SELECTED"; ?> />Standard - Larger Printed Number and Style with Barcode/QR Code</option>
+            <option value="8" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "8")) echo " SELECTED"; ?> />Anonymous - Smaller Printed Entry Number</option>
+            <option value="6" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "6")) echo " SELECTED"; ?> />Anonymous - Smaller Printed Entry Number with Barcode/QR Code</option>
+            <option value="9" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "9")) echo " SELECTED"; ?> />Anonymous - Smaller Printed Random Number</option>
+            <option value="0" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "0")) echo " SELECTED"; ?> />Anonymous - Smaller Printed Random Number with Barcode/QR Code</option>
+            <option value="2" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "2")) echo " SELECTED"; ?> />Anonymous - Larger Printed Entry Number</option>
+            <option value="1" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "1")) echo " SELECTED"; ?> />Anonymous - Larger Printed Entry Number with Barcode/QR Code</option>
+            <option value="4" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "4")) echo " SELECTED"; ?> />Anonymous - Larger Printed Random Number</option>
+            <option value="3" <?php if (($section != "step3") && ($row_prefs['prefsEntryForm'] == "3")) echo " SELECTED"; ?> />Anonymous - Larger Printed Random Number with Barcode/QR Code</option>
         </optgroup>
     </select>
+        <div class="help-block">
+            <p><strong>Standard Entry Labels</strong> feature the participant's name and contact info, the name of the entry, and the entry's style/category.</p>
+            <p><strong>Anonymous Entry Labels</strong> do not list the participant's information. These labels are intended to be taped to bottles by entrants before submittal.</p>
+        </div>
         <div class="help-block">
             <div class="btn-group" role="group" aria-label="entryFormModal">
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-xs btn-info" data-toggle="modal" data-target="#entryFormModal">Printed Entry Form and/or Bottle Labels Info</button>
                 </div>
             </div>
+            <div class="btn-group" role="group" aria-label="entryBottleLabelExamples">
+                <a class="btn btn-xs btn-info hide-loader" data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_standard.png" data-caption="Standard">Examples</a>
+            </div>
+        </div>
+        <div class="hidden">
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_standard_large_number.png" data-caption="Standard - Larger Printed Number and Style">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_standard_barcode.png" data-caption="Standard with Barcode/QR Code">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_standard_large_number_barcode.png" data-caption="Standard - Larger Printed Number and Style with Barcode/QR Code">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_anon.png" data-caption="Anonymous - Smaller Printed Entry Number">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_anon_barcode.png" data-caption="Anonymous - Smaller Printed Entry Number with Barcode/QR Code">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_anon_large_number.png" data-caption="Anonymous - Larger Printed Entry Number">Link</a>
+            <a data-fancybox="gallery" rel="group-bottle-labels" href="<?php echo $base_url; ?>images/label_anon_large_number_barcode.png" data-caption="Anonymous - Larger Printed Entry Number with Barcode/QR Code">Link</a>
         </div>
     </div>
 </div>
